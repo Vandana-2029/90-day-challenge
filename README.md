@@ -2,6 +2,8 @@
 
 My personal tracker for a 90-day job-ready challenge (Day 1 = 1 Nov 2026, Day 90 = 29 Jan 2027): DSA, MERN, aptitude, CS core, communication and job hunting.
 
+**Live site:** https://vandana-90-day-challenge.onrender.com (Render) · mirror: https://vandana-2029.github.io/90-day-challenge/ (GitHub Pages)
+
 The idea: **daily goals feed big goals.** When a day's tasks aren't done, the tracker shows how far the big goal *drifts*: how many days Day 30, 60 and 90 move back, and whether I'll still be test-ready before the January hiring drives.
 
 ## Pages
@@ -38,11 +40,19 @@ Today's tasks never count against me until the day ends. Catch-up days add no ne
 
 It's plain HTML, CSS and JavaScript (ES modules), with no build step.
 
-- **Online:** GitHub Pages serves it straight from the `main` branch.
+- **Render (main site):** deployed as a free static site from [`render.yaml`](render.yaml). Every push to `main` redeploys automatically.
+- **GitHub Pages (mirror):** served straight from the `main` branch root.
 - **Locally:** run `npx serve .` or `python3 -m http.server` in this folder and open the address it prints. (Double-clicking `index.html` won't work, because browsers block loading `data/plan.json` from a file.)
 - **Preview another date:** add `?today=2026-11-20` to the address.
 
-Progress is saved in the browser's localStorage, so it stays on that device only. Download a backup from Settings every week.
+Progress is saved in the browser's localStorage, so it stays on that device and that address only. The Render site and the GitHub Pages site keep **separate** progress, so pick one (Render) and stick to it. Download a backup from Settings every week. The same file restores on any device or address.
+
+## Deploy your own copy on Render
+
+1. Fork this repo.
+2. In the [Render dashboard](https://dashboard.render.com), choose **New → Blueprint** and select your fork.
+3. Render reads `render.yaml` and creates a static site. There's no build command, and the publish directory is the repo root.
+4. Open the `*.onrender.com` address Render gives you.
 
 ## Files
 
@@ -56,6 +66,7 @@ js/plan.js          reading the plan + start date
 js/drift.js         drift engine, projections, streaks, hiring check
 js/replan.js        re-plan + welcome-back screen
 js/views/*.js       one file per page
+render.yaml         Render static-site Blueprint
 ```
 
 Built with help from Claude (Anthropic's AI) as a personal tool. The plan comes from my 90-day challenge notes.
