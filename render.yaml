@@ -1,0 +1,20 @@
+# Render Blueprint: deploys this repo as a free static site.
+# Render reads this file when you choose New → Blueprint and pick this repo.
+services:
+  - type: web
+    name: vandana-90-day-challenge
+    runtime: static
+    buildCommand: echo "No build step - plain HTML, CSS and JS"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: false
+    headers:
+      # always fetch the latest plan so updates show up straight away
+      - path: /data/*
+        name: Cache-Control
+        value: no-cache
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
