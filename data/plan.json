@@ -1,0 +1,6503 @@
+{
+  "meta": {
+    "title": "Vandana's 90-Day Challenge",
+    "owner": "Vandana",
+    "version": 2,
+    "generated": "2026-10-31",
+    "dailyHoursTarget": "4-5",
+    "startDate": "2026-11-01",
+    "endDate": "2027-01-29",
+    "totalDays": 90,
+    "leetcodePlanned": 129,
+    "datesNote": "Dates assume Day 1 = startDate. If you shift the start, recompute date = startDate + (day - 1)."
+  },
+  "rules": [
+    "Never zero: a Minimum Day counts as showed up",
+    "Never double up: missed work goes to the next catch-up day (every 7th day)",
+    "Missed 3+ days: continue from where you stopped and shift the end date; it is 90 working days",
+    "Review on Days 30, 60, 90: cut scope, not sleep"
+  ],
+  "tracks": [
+    {
+      "id": "DSA",
+      "name": "DSA",
+      "description": "Data structures and algorithms + daily LeetCode",
+      "color": "#2563EB"
+    },
+    {
+      "id": "DEV",
+      "name": "Web Dev (MERN) + Deployment",
+      "description": "JavaScript, React, Node, Express, MongoDB, deployment, Project 1",
+      "color": "#16A34A"
+    },
+    {
+      "id": "AI",
+      "name": "AI / ML",
+      "description": "Python, ML basics, agentic AI, research project",
+      "color": "#9333EA"
+    },
+    {
+      "id": "CS",
+      "name": "CS Core + Aptitude",
+      "description": "Computer Networks, OOPs, DBMS, OS, aptitude, interview revision",
+      "color": "#EA580C"
+    },
+    {
+      "id": "APT",
+      "name": "Aptitude",
+      "description": "Quant, reasoning, verbal + NQT-style mocks (service-company tests)",
+      "color": "#CA8A04"
+    },
+    {
+      "id": "COMM",
+      "name": "Communication",
+      "description": "Daily speaking practice + weekly grammar topic",
+      "color": "#DB2777"
+    },
+    {
+      "id": "JOB",
+      "name": "Job Hunt",
+      "description": "Profiles, applications, referrals, resume",
+      "color": "#0891B2"
+    }
+  ],
+  "statusValues": [
+    {
+      "id": "not_started",
+      "label": "Not started",
+      "countsAsDone": false
+    },
+    {
+      "id": "done",
+      "label": "Done",
+      "countsAsDone": true
+    },
+    {
+      "id": "done_with_help",
+      "label": "Done (with help)",
+      "countsAsDone": true
+    },
+    {
+      "id": "skipped",
+      "label": "Skipped",
+      "countsAsDone": false
+    }
+  ],
+  "dayTypes": [
+    {
+      "id": "full",
+      "name": "Full day",
+      "hours": 5,
+      "description": "Every block at full length"
+    },
+    {
+      "id": "normal",
+      "name": "Normal day",
+      "hours": 3.5,
+      "description": "1 problem, shorter build, aptitude + speaking"
+    },
+    {
+      "id": "minimum",
+      "name": "Minimum day",
+      "hours": 1,
+      "description": "1 LeetCode problem + 30 min coding + 10 min speaking. Still counts as showed up"
+    }
+  ],
+  "timetable": [
+    {
+      "block": 1,
+      "name": "DSA",
+      "track": "DSA",
+      "suggestedTime": "09:00-10:15",
+      "full": 75,
+      "normal": 40,
+      "minimum": 30
+    },
+    {
+      "block": 2,
+      "name": "Build",
+      "track": "DEV/AI",
+      "suggestedTime": "10:30-12:30",
+      "full": 120,
+      "normal": 90,
+      "minimum": 30
+    },
+    {
+      "block": 3,
+      "name": "Aptitude",
+      "track": "APT",
+      "suggestedTime": "16:00-16:30",
+      "full": 30,
+      "normal": 30,
+      "minimum": 0
+    },
+    {
+      "block": 4,
+      "name": "Learn",
+      "track": "CS/AI",
+      "suggestedTime": "16:30-17:00",
+      "full": 30,
+      "normal": 15,
+      "minimum": 0
+    },
+    {
+      "block": 5,
+      "name": "Communication",
+      "track": "COMM",
+      "suggestedTime": "17:30-18:00",
+      "full": 30,
+      "normal": 20,
+      "minimum": 10
+    },
+    {
+      "block": 6,
+      "name": "Job hunt (from Day 25)",
+      "track": "JOB",
+      "suggestedTime": "18:00-18:20",
+      "full": 20,
+      "normal": 15,
+      "minimum": 0
+    }
+  ],
+  "phases": [
+    {
+      "id": 1,
+      "name": "Foundation",
+      "startDay": 1,
+      "endDay": 30,
+      "goal": "Finish linear DSA + trees, learn React and Node basics, CN + OOPs",
+      "leetcodeCount": 47
+    },
+    {
+      "id": 2,
+      "name": "Build & Deploy",
+      "startDay": 31,
+      "endDay": 60,
+      "goal": "Graphs + heaps + backtracking, build and deploy Project 1, DBMS/OS, Python + ML basics, start applying",
+      "leetcodeCount": 47
+    },
+    {
+      "id": 3,
+      "name": "AI, Research & Interviews",
+      "startDay": 61,
+      "endDay": 90,
+      "goal": "DP + mocks, agentic AI feature, research project, interview-ready",
+      "leetcodeCount": 35
+    }
+  ],
+  "milestones": [
+    {
+      "id": "m30",
+      "day": 30,
+      "date": "2026-11-30",
+      "phase": 1,
+      "title": "Day 30: Foundation",
+      "passRule": "About 70% of items done = pass",
+      "items": [
+        {
+          "id": "m30-1",
+          "text": "45+ LeetCode problems (recursion, linked list, trees, BST, binary search)",
+          "track": "DSA",
+          "done": false,
+          "metric": "leetcodeSolved",
+          "target": 45
+        },
+        {
+          "id": "m30-2",
+          "text": "JavaScript revised + React basics done",
+          "track": "DEV",
+          "done": false
+        },
+        {
+          "id": "m30-3",
+          "text": "2 mini projects on GitHub (to-do app, weather app)",
+          "track": "DEV",
+          "done": false,
+          "metric": "projectsOnGithub",
+          "target": 2
+        },
+        {
+          "id": "m30-4",
+          "text": "Node + Express REST API with 4 routes",
+          "track": "DEV",
+          "done": false
+        },
+        {
+          "id": "m30-5",
+          "text": "CN + OOPs done; answer 20 questions aloud",
+          "track": "CS",
+          "done": false
+        },
+        {
+          "id": "m30-9",
+          "text": "Aptitude: 20 topics covered + first timed mock done",
+          "track": "APT",
+          "done": false
+        },
+        {
+          "id": "m30-6",
+          "text": "1-minute self-introduction written and recorded",
+          "track": "COMM",
+          "done": false
+        },
+        {
+          "id": "m30-7",
+          "text": "Honest resume v1",
+          "track": "JOB",
+          "done": false
+        },
+        {
+          "id": "m30-8",
+          "text": "Showed up on 22+ of 30 days",
+          "track": "ALL",
+          "done": false,
+          "metric": "daysShowedUp",
+          "target": 22
+        }
+      ]
+    },
+    {
+      "id": "m60",
+      "day": 60,
+      "date": "2026-12-30",
+      "phase": 2,
+      "title": "Day 60: Build & Deploy",
+      "passRule": "About 70% of items done = pass",
+      "items": [
+        {
+          "id": "m60-1",
+          "text": "95+ LeetCode problems (adds two pointers, sliding window, heaps, backtracking, graphs)",
+          "track": "DSA",
+          "done": false,
+          "metric": "leetcodeSolved",
+          "target": 95
+        },
+        {
+          "id": "m60-2",
+          "text": "Project 1 (Milestone Tracker) live on a public URL",
+          "track": "DEV",
+          "done": false
+        },
+        {
+          "id": "m60-3",
+          "text": "DBMS + SQL and OS basics done",
+          "track": "CS",
+          "done": false
+        },
+        {
+          "id": "m60-4",
+          "text": "Python, pandas, scikit-learn basics; 1 ML notebook on GitHub",
+          "track": "AI",
+          "done": false
+        },
+        {
+          "id": "m60-5",
+          "text": "Resume v2 with Project 1; LinkedIn updated",
+          "track": "JOB",
+          "done": false
+        },
+        {
+          "id": "m60-6",
+          "text": "40+ applications and 10+ referral requests",
+          "track": "JOB",
+          "done": false,
+          "metric": "applications",
+          "target": 40
+        },
+        {
+          "id": "m60-9",
+          "text": "Registered on TCS NextStep, Infosys, Cognizant, Accenture portals; 4+ NQT-style mocks done",
+          "track": "APT",
+          "done": false
+        },
+        {
+          "id": "m60-7",
+          "text": "HR answers ready (about yourself, gap, strengths, why hire you)",
+          "track": "COMM",
+          "done": false
+        },
+        {
+          "id": "m60-8",
+          "text": "Showed up on 45+ of 60 days",
+          "track": "ALL",
+          "done": false,
+          "metric": "daysShowedUp",
+          "target": 45
+        }
+      ]
+    },
+    {
+      "id": "m90",
+      "day": 90,
+      "date": "2027-01-29",
+      "phase": 3,
+      "title": "Day 90: AI, Research & Interviews",
+      "passRule": "About 70% of items done = pass",
+      "items": [
+        {
+          "id": "m90-1",
+          "text": "140+ LeetCode problems (adds DP, greedy, tries) + 2 timed mock interviews",
+          "track": "DSA",
+          "done": false,
+          "metric": "leetcodeSolved",
+          "target": 140
+        },
+        {
+          "id": "m90-2",
+          "text": "Study Coach AI agent (LLM + tool calling) added to Project 1",
+          "track": "AI",
+          "done": false
+        },
+        {
+          "id": "m90-3",
+          "text": "Research project: code + written report on GitHub (stretch goal, cut first if behind)",
+          "track": "AI",
+          "done": false
+        },
+        {
+          "id": "m90-4",
+          "text": "Final resume with both projects",
+          "track": "JOB",
+          "done": false
+        },
+        {
+          "id": "m90-5",
+          "text": "120+ applications and 20+ referral requests",
+          "track": "JOB",
+          "done": false,
+          "metric": "applications",
+          "target": 120
+        },
+        {
+          "id": "m90-6",
+          "text": "5+ mock interviews (technical + HR)",
+          "track": "COMM",
+          "done": false,
+          "metric": "mockInterviews",
+          "target": 5
+        },
+        {
+          "id": "m90-8",
+          "text": "Sat at least 2 mass-hiring tests (e.g. TCS NQT, Cognizant GenC)",
+          "track": "JOB",
+          "done": false
+        },
+        {
+          "id": "m90-7",
+          "text": "Showed up on 75+ of 90 days",
+          "track": "ALL",
+          "done": false,
+          "metric": "daysShowedUp",
+          "target": 75
+        }
+      ]
+    }
+  ],
+  "grammarTopics": [
+    {
+      "week": 1,
+      "days": "1-7",
+      "topic": "Present tenses (simple, continuous, perfect)"
+    },
+    {
+      "week": 2,
+      "days": "8-14",
+      "topic": "Past tenses"
+    },
+    {
+      "week": 3,
+      "days": "15-21",
+      "topic": "Future tense + modal verbs (can, could, should, would)"
+    },
+    {
+      "week": 4,
+      "days": "22-28",
+      "topic": "Articles: a, an, the"
+    },
+    {
+      "week": 5,
+      "days": "29-35",
+      "topic": "Prepositions (in, on, at, for, since)"
+    },
+    {
+      "week": 6,
+      "days": "36-42",
+      "topic": "Subject-verb agreement"
+    },
+    {
+      "week": 7,
+      "days": "43-49",
+      "topic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')"
+    },
+    {
+      "week": 8,
+      "days": "50-56",
+      "topic": "Conditionals (if-sentences)"
+    },
+    {
+      "week": 9,
+      "days": "57-63",
+      "topic": "Active vs passive voice"
+    },
+    {
+      "week": 10,
+      "days": "64-70",
+      "topic": "No new topic: interview language"
+    },
+    {
+      "week": 11,
+      "days": "71-77",
+      "topic": "No new topic: interview language"
+    },
+    {
+      "week": 12,
+      "days": "78-84",
+      "topic": "No new topic: interview language"
+    },
+    {
+      "week": 13,
+      "days": "85-90",
+      "topic": "No new topic: interview language"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "2026-11-01",
+      "weekday": "Sun",
+      "week": 1,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Recursion basics",
+      "grammarTopic": "Present tenses (simple, continuous, perfect)",
+      "tasks": [
+        {
+          "id": "d01-dsa-1",
+          "track": "DSA",
+          "title": "Warm-up: print 1..N and factorial recursively, draw the call stack on paper",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d01-dsa-2",
+          "track": "DSA",
+          "title": "LC 509: Fibonacci Number",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/fibonacci-number/",
+          "leetcode": 509,
+          "status": "not_started"
+        },
+        {
+          "id": "d01-dev-1",
+          "track": "DEV",
+          "title": "JS: quickly revise what you've done so far (variables, functions, arrays, objects) + write 5 small programs",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d01-cs-1",
+          "track": "CS",
+          "title": "CN: what a network is, LAN/MAN/WAN, topologies",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d01-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Number system, divisibility (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d01-comm-1",
+          "track": "COMM",
+          "title": "Write your 1-minute self-introduction (first draft). Grammar: Present tenses (simple, continuous, perfect)",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 2,
+      "date": "2026-11-02",
+      "weekday": "Mon",
+      "week": 1,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Recursion",
+      "grammarTopic": "Present tenses (simple, continuous, perfect)",
+      "tasks": [
+        {
+          "id": "d02-dsa-1",
+          "track": "DSA",
+          "title": "LC 344: Reverse String",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/reverse-string/",
+          "leetcode": 344,
+          "status": "not_started"
+        },
+        {
+          "id": "d02-dsa-2",
+          "track": "DSA",
+          "title": "LC 231: Power of Two",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/power-of-two/",
+          "leetcode": 231,
+          "status": "not_started"
+        },
+        {
+          "id": "d02-dev-1",
+          "track": "DEV",
+          "title": "JS lectures: array methods (map/filter/reduce), ES6, closures, `this`",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d02-cs-1",
+          "track": "CS",
+          "title": "CN: OSI model, all 7 layers",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d02-apt-1",
+          "track": "APT",
+          "title": "Aptitude: HCF and LCM (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d02-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Present tenses (simple, continuous, perfect)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 3,
+      "date": "2026-11-03",
+      "weekday": "Tue",
+      "week": 1,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Linked list",
+      "grammarTopic": "Present tenses (simple, continuous, perfect)",
+      "tasks": [
+        {
+          "id": "d03-dsa-1",
+          "track": "DSA",
+          "title": "LC 206: Reverse Linked List",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/reverse-linked-list/",
+          "leetcode": 206,
+          "status": "not_started"
+        },
+        {
+          "id": "d03-dsa-2",
+          "track": "DSA",
+          "title": "LC 876: Middle of the Linked List",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/middle-of-the-linked-list/",
+          "leetcode": 876,
+          "status": "not_started"
+        },
+        {
+          "id": "d03-dev-1",
+          "track": "DEV",
+          "title": "JS lectures: DOM and events (build a button/counter page as you watch)",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d03-cs-1",
+          "track": "CS",
+          "title": "CN: TCP/IP model vs OSI",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d03-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Percentages (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d03-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Present tenses (simple, continuous, perfect)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 4,
+      "date": "2026-11-04",
+      "weekday": "Wed",
+      "week": 1,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Linked list",
+      "grammarTopic": "Present tenses (simple, continuous, perfect)",
+      "tasks": [
+        {
+          "id": "d04-dsa-1",
+          "track": "DSA",
+          "title": "LC 21: Merge Two Sorted Lists",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/merge-two-sorted-lists/",
+          "leetcode": 21,
+          "status": "not_started"
+        },
+        {
+          "id": "d04-dsa-2",
+          "track": "DSA",
+          "title": "LC 141: Linked List Cycle",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/linked-list-cycle/",
+          "leetcode": 141,
+          "status": "not_started"
+        },
+        {
+          "id": "d04-dev-1",
+          "track": "DEV",
+          "title": "JS lectures: async JS (callbacks, promises, async/await, fetch)",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d04-cs-1",
+          "track": "CS",
+          "title": "CN: IP addressing, IPv4 vs IPv6, public vs private IP",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d04-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Profit and loss (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d04-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Present tenses (simple, continuous, perfect)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 5,
+      "date": "2026-11-05",
+      "weekday": "Thu",
+      "week": 1,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Linked list",
+      "grammarTopic": "Present tenses (simple, continuous, perfect)",
+      "tasks": [
+        {
+          "id": "d05-dsa-1",
+          "track": "DSA",
+          "title": "LC 19: Remove Nth Node From End of List",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+          "leetcode": 19,
+          "status": "not_started"
+        },
+        {
+          "id": "d05-dsa-2",
+          "track": "DSA",
+          "title": "LC 234: Palindrome Linked List",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/palindrome-linked-list/",
+          "leetcode": 234,
+          "status": "not_started"
+        },
+        {
+          "id": "d05-dev-1",
+          "track": "DEV",
+          "title": "Mini project 1: to-do app in plain JS with localStorage",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d05-cs-1",
+          "track": "CS",
+          "title": "CN: TCP vs UDP, 3-way handshake, ports",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d05-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Simple and compound interest (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d05-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Present tenses (simple, continuous, perfect)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 6,
+      "date": "2026-11-06",
+      "weekday": "Fri",
+      "week": 1,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Linked list",
+      "grammarTopic": "Present tenses (simple, continuous, perfect)",
+      "tasks": [
+        {
+          "id": "d06-dsa-1",
+          "track": "DSA",
+          "title": "LC 160: Intersection of Two Linked Lists",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+          "leetcode": 160,
+          "status": "not_started"
+        },
+        {
+          "id": "d06-dsa-2",
+          "track": "DSA",
+          "title": "LC 2: Add Two Numbers",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/add-two-numbers/",
+          "leetcode": 2,
+          "status": "not_started"
+        },
+        {
+          "id": "d06-dev-1",
+          "track": "DEV",
+          "title": "Git + GitHub: init, commit, push. Push the to-do app with a README",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d06-cs-1",
+          "track": "CS",
+          "title": "CN: DNS, HTTP vs HTTPS, what happens when you type a URL",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d06-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Ratio and proportion (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d06-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Present tenses (simple, continuous, perfect)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 7,
+      "date": "2026-11-07",
+      "weekday": "Sat",
+      "week": 1,
+      "phase": 1,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Present tenses (simple, continuous, perfect)",
+      "tasks": [
+        {
+          "id": "d07-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d07-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d07-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d07-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 8,
+      "date": "2026-11-08",
+      "weekday": "Sun",
+      "week": 2,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Binary tree traversals",
+      "grammarTopic": "Past tenses",
+      "tasks": [
+        {
+          "id": "d08-dsa-1",
+          "track": "DSA",
+          "title": "LC 144: Binary Tree Preorder Traversal",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+          "leetcode": 144,
+          "status": "not_started"
+        },
+        {
+          "id": "d08-dsa-2",
+          "track": "DSA",
+          "title": "LC 94: Binary Tree Inorder Traversal",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+          "leetcode": 94,
+          "status": "not_started"
+        },
+        {
+          "id": "d08-dev-1",
+          "track": "DEV",
+          "title": "React: Vite setup, JSX, components, props",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d08-cs-1",
+          "track": "CS",
+          "title": "CN: MAC vs IP, ARP, DHCP",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d08-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Averages, mixtures and alligations (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d08-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Past tenses) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 9,
+      "date": "2026-11-09",
+      "weekday": "Mon",
+      "week": 2,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Binary tree basics",
+      "grammarTopic": "Past tenses",
+      "tasks": [
+        {
+          "id": "d09-dsa-1",
+          "track": "DSA",
+          "title": "LC 145: Binary Tree Postorder Traversal",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+          "leetcode": 145,
+          "status": "not_started"
+        },
+        {
+          "id": "d09-dsa-2",
+          "track": "DSA",
+          "title": "LC 104: Maximum Depth of Binary Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+          "leetcode": 104,
+          "status": "not_started"
+        },
+        {
+          "id": "d09-dev-1",
+          "track": "DEV",
+          "title": "React: useState, events, lists and keys",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d09-cs-1",
+          "track": "CS",
+          "title": "CN: hub, switch, router, gateway, firewall",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d09-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Time and work, pipes and cisterns (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d09-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Past tenses) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 10,
+      "date": "2026-11-10",
+      "weekday": "Tue",
+      "week": 2,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Tree BFS",
+      "grammarTopic": "Past tenses",
+      "tasks": [
+        {
+          "id": "d10-dsa-1",
+          "track": "DSA",
+          "title": "LC 102: Binary Tree Level Order Traversal",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+          "leetcode": 102,
+          "status": "not_started"
+        },
+        {
+          "id": "d10-dsa-2",
+          "track": "DSA",
+          "title": "LC 111: Minimum Depth of Binary Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/minimum-depth-of-binary-tree/",
+          "leetcode": 111,
+          "status": "not_started"
+        },
+        {
+          "id": "d10-dev-1",
+          "track": "DEV",
+          "title": "React: useEffect, fetching data from an API",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d10-cs-1",
+          "track": "CS",
+          "title": "CN: subnetting basics + answer 15 CN questions aloud",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d10-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Time, speed and distance (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d10-comm-1",
+          "track": "COMM",
+          "title": "Record your self-introduction and compare it with the last recording",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 11,
+      "date": "2026-11-11",
+      "weekday": "Wed",
+      "week": 2,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Tree recursion",
+      "grammarTopic": "Past tenses",
+      "tasks": [
+        {
+          "id": "d11-dsa-1",
+          "track": "DSA",
+          "title": "LC 226: Invert Binary Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/invert-binary-tree/",
+          "leetcode": 226,
+          "status": "not_started"
+        },
+        {
+          "id": "d11-dsa-2",
+          "track": "DSA",
+          "title": "LC 100: Same Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/same-tree/",
+          "leetcode": 100,
+          "status": "not_started"
+        },
+        {
+          "id": "d11-dev-1",
+          "track": "DEV",
+          "title": "React: forms, controlled inputs, React Router",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d11-cs-1",
+          "track": "CS",
+          "title": "OOPs (C++): class, object, why OOPs",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d11-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Trains and boats (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d11-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Past tenses) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 12,
+      "date": "2026-11-12",
+      "weekday": "Thu",
+      "week": 2,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Tree recursion",
+      "grammarTopic": "Past tenses",
+      "tasks": [
+        {
+          "id": "d12-dsa-1",
+          "track": "DSA",
+          "title": "LC 101: Symmetric Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/symmetric-tree/",
+          "leetcode": 101,
+          "status": "not_started"
+        },
+        {
+          "id": "d12-dsa-2",
+          "track": "DSA",
+          "title": "LC 543: Diameter of Binary Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/diameter-of-binary-tree/",
+          "leetcode": 543,
+          "status": "not_started"
+        },
+        {
+          "id": "d12-dev-1",
+          "track": "DEV",
+          "title": "Mini project 2: weather app in React (search, loading and error states)",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d12-cs-1",
+          "track": "CS",
+          "title": "OOPs: encapsulation, access specifiers",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d12-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Permutations and combinations (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d12-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Past tenses) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 13,
+      "date": "2026-11-13",
+      "weekday": "Fri",
+      "week": 2,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Tree recursion",
+      "grammarTopic": "Past tenses",
+      "tasks": [
+        {
+          "id": "d13-dsa-1",
+          "track": "DSA",
+          "title": "LC 112: Path Sum",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/path-sum/",
+          "leetcode": 112,
+          "status": "not_started"
+        },
+        {
+          "id": "d13-dsa-2",
+          "track": "DSA",
+          "title": "LC 110: Balanced Binary Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/balanced-binary-tree/",
+          "leetcode": 110,
+          "status": "not_started"
+        },
+        {
+          "id": "d13-dev-1",
+          "track": "DEV",
+          "title": "Finish the weather app and deploy it on Vercel",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d13-cs-1",
+          "track": "CS",
+          "title": "OOPs: constructors, destructors, this pointer",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d13-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Probability (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d13-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Past tenses) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 14,
+      "date": "2026-11-14",
+      "weekday": "Sat",
+      "week": 2,
+      "phase": 1,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Past tenses",
+      "tasks": [
+        {
+          "id": "d14-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d14-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d14-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d14-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 15,
+      "date": "2026-11-15",
+      "weekday": "Sun",
+      "week": 3,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Tree views / BFS",
+      "grammarTopic": "Future tense + modal verbs (can, could, should, would)",
+      "tasks": [
+        {
+          "id": "d15-dsa-1",
+          "track": "DSA",
+          "title": "LC 199: Binary Tree Right Side View",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-tree-right-side-view/",
+          "leetcode": 199,
+          "status": "not_started"
+        },
+        {
+          "id": "d15-dsa-2",
+          "track": "DSA",
+          "title": "LC 103: Binary Tree Zigzag Level Order Traversal",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+          "leetcode": 103,
+          "status": "not_started"
+        },
+        {
+          "id": "d15-dev-1",
+          "track": "DEV",
+          "title": "React Context API + Tailwind CSS basics",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d15-cs-1",
+          "track": "CS",
+          "title": "OOPs: inheritance and its types",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d15-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Data interpretation (tables, charts) (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d15-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Future tense + modal verbs (can, could, should, would)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 16,
+      "date": "2026-11-16",
+      "weekday": "Mon",
+      "week": 3,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Tree LCA",
+      "grammarTopic": "Future tense + modal verbs (can, could, should, would)",
+      "tasks": [
+        {
+          "id": "d16-dsa-1",
+          "track": "DSA",
+          "title": "LC 236: Lowest Common Ancestor of a Binary Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+          "leetcode": 236,
+          "status": "not_started"
+        },
+        {
+          "id": "d16-dsa-2",
+          "track": "DSA",
+          "title": "LC 572: Subtree of Another Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/subtree-of-another-tree/",
+          "leetcode": 572,
+          "status": "not_started"
+        },
+        {
+          "id": "d16-dev-1",
+          "track": "DEV",
+          "title": "Node.js basics: modules, npm, fs, a basic HTTP server",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d16-cs-1",
+          "track": "CS",
+          "title": "OOPs: overloading vs overriding",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d16-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Number and letter series (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d16-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Future tense + modal verbs (can, could, should, would)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 17,
+      "date": "2026-11-17",
+      "weekday": "Tue",
+      "week": 3,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Tree construction",
+      "grammarTopic": "Future tense + modal verbs (can, could, should, would)",
+      "tasks": [
+        {
+          "id": "d17-dsa-1",
+          "track": "DSA",
+          "title": "LC 105: Construct Binary Tree from Preorder and Inorder Traversal",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+          "leetcode": 105,
+          "status": "not_started"
+        },
+        {
+          "id": "d17-dsa-2",
+          "track": "DSA",
+          "title": "LC 257: Binary Tree Paths",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-tree-paths/",
+          "leetcode": 257,
+          "status": "not_started"
+        },
+        {
+          "id": "d17-dev-1",
+          "track": "DEV",
+          "title": "Express: routes, middleware, req/res",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d17-cs-1",
+          "track": "CS",
+          "title": "OOPs: virtual functions, runtime polymorphism",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d17-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Coding-decoding (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d17-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Future tense + modal verbs (can, could, should, would)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 18,
+      "date": "2026-11-18",
+      "weekday": "Wed",
+      "week": 3,
+      "phase": 1,
+      "type": "normal",
+      "theme": "BST basics",
+      "grammarTopic": "Future tense + modal verbs (can, could, should, would)",
+      "tasks": [
+        {
+          "id": "d18-dsa-1",
+          "track": "DSA",
+          "title": "LC 700: Search in a Binary Search Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+          "leetcode": 700,
+          "status": "not_started"
+        },
+        {
+          "id": "d18-dsa-2",
+          "track": "DSA",
+          "title": "LC 701: Insert into a Binary Search Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/insert-into-a-binary-search-tree/",
+          "leetcode": 701,
+          "status": "not_started"
+        },
+        {
+          "id": "d18-dev-1",
+          "track": "DEV",
+          "title": "Express REST API with GET/POST/PUT/DELETE; test in Postman",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d18-cs-1",
+          "track": "CS",
+          "title": "OOPs: abstraction, abstract classes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d18-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Blood relations (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d18-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Future tense + modal verbs (can, could, should, would)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 19,
+      "date": "2026-11-19",
+      "weekday": "Thu",
+      "week": 3,
+      "phase": 1,
+      "type": "normal",
+      "theme": "BST",
+      "grammarTopic": "Future tense + modal verbs (can, could, should, would)",
+      "tasks": [
+        {
+          "id": "d19-dsa-1",
+          "track": "DSA",
+          "title": "LC 98: Validate Binary Search Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/validate-binary-search-tree/",
+          "leetcode": 98,
+          "status": "not_started"
+        },
+        {
+          "id": "d19-dsa-2",
+          "track": "DSA",
+          "title": "LC 230: Kth Smallest Element in a BST",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+          "leetcode": 230,
+          "status": "not_started"
+        },
+        {
+          "id": "d19-dev-1",
+          "track": "DEV",
+          "title": "MongoDB: NoSQL basics, Atlas setup, CRUD in Compass",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d19-cs-1",
+          "track": "CS",
+          "title": "OOPs: static members, friend functions, operator overloading",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d19-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Directions (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d19-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Future tense + modal verbs (can, could, should, would)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 20,
+      "date": "2026-11-20",
+      "weekday": "Fri",
+      "week": 3,
+      "phase": 1,
+      "type": "normal",
+      "theme": "BST",
+      "grammarTopic": "Future tense + modal verbs (can, could, should, would)",
+      "tasks": [
+        {
+          "id": "d20-dsa-1",
+          "track": "DSA",
+          "title": "LC 235: Lowest Common Ancestor of a Binary Search Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+          "leetcode": 235,
+          "status": "not_started"
+        },
+        {
+          "id": "d20-dsa-2",
+          "track": "DSA",
+          "title": "LC 108: Convert Sorted Array to Binary Search Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+          "leetcode": 108,
+          "status": "not_started"
+        },
+        {
+          "id": "d20-dev-1",
+          "track": "DEV",
+          "title": "Mongoose: schemas and models; connect Express to MongoDB",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d20-cs-1",
+          "track": "CS",
+          "title": "OOPs: answer 20 interview questions aloud",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d20-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Seating arrangement (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d20-comm-1",
+          "track": "COMM",
+          "title": "Record your self-introduction and compare it with the last recording",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 21,
+      "date": "2026-11-21",
+      "weekday": "Sat",
+      "week": 3,
+      "phase": 1,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Future tense + modal verbs (can, could, should, would)",
+      "tasks": [
+        {
+          "id": "d21-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d21-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d21-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d21-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 22,
+      "date": "2026-11-22",
+      "weekday": "Sun",
+      "week": 4,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Binary search",
+      "grammarTopic": "Articles: a, an, the",
+      "tasks": [
+        {
+          "id": "d22-dsa-1",
+          "track": "DSA",
+          "title": "LC 704: Binary Search",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/binary-search/",
+          "leetcode": 704,
+          "status": "not_started"
+        },
+        {
+          "id": "d22-dsa-2",
+          "track": "DSA",
+          "title": "LC 35: Search Insert Position",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/search-insert-position/",
+          "leetcode": 35,
+          "status": "not_started"
+        },
+        {
+          "id": "d22-dev-1",
+          "track": "DEV",
+          "title": "Notes API: full CRUD with Express + MongoDB",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d22-cs-1",
+          "track": "CS",
+          "title": "OOPs in JS: classes and prototypes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d22-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Syllogisms (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d22-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Articles: a, an, the) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 23,
+      "date": "2026-11-23",
+      "weekday": "Mon",
+      "week": 4,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Binary search",
+      "grammarTopic": "Articles: a, an, the",
+      "tasks": [
+        {
+          "id": "d23-dsa-1",
+          "track": "DSA",
+          "title": "LC 34: Find First and Last Position of Element in Sorted Array",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+          "leetcode": 34,
+          "status": "not_started"
+        },
+        {
+          "id": "d23-dsa-2",
+          "track": "DSA",
+          "title": "LC 33: Search in Rotated Sorted Array",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+          "leetcode": 33,
+          "status": "not_started"
+        },
+        {
+          "id": "d23-dev-1",
+          "track": "DEV",
+          "title": "Auth concepts: password hashing (bcrypt), JWT",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d23-cs-1",
+          "track": "CS",
+          "title": "Write a small OOP design in C++ (library or bank system)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d23-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Puzzles (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d23-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Articles: a, an, the) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 24,
+      "date": "2026-11-24",
+      "weekday": "Tue",
+      "week": 4,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Binary search",
+      "grammarTopic": "Articles: a, an, the",
+      "tasks": [
+        {
+          "id": "d24-dsa-1",
+          "track": "DSA",
+          "title": "LC 153: Find Minimum in Rotated Sorted Array",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+          "leetcode": 153,
+          "status": "not_started"
+        },
+        {
+          "id": "d24-dsa-2",
+          "track": "DSA",
+          "title": "LC 74: Search a 2D Matrix",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/search-a-2d-matrix/",
+          "leetcode": 74,
+          "status": "not_started"
+        },
+        {
+          "id": "d24-dev-1",
+          "track": "DEV",
+          "title": "Add signup/login with JWT to the notes API",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d24-cs-1",
+          "track": "CS",
+          "title": "CN + OOPs mixed revision",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d24-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Data sufficiency (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d24-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Articles: a, an, the) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 25,
+      "date": "2026-11-25",
+      "weekday": "Wed",
+      "week": 4,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Binary search on answer",
+      "grammarTopic": "Articles: a, an, the",
+      "tasks": [
+        {
+          "id": "d25-dsa-1",
+          "track": "DSA",
+          "title": "LC 875: Koko Eating Bananas",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/koko-eating-bananas/",
+          "leetcode": 875,
+          "status": "not_started"
+        },
+        {
+          "id": "d25-dsa-2",
+          "track": "DSA",
+          "title": "LC 69: Sqrt(x)",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/sqrt-x/",
+          "leetcode": 69,
+          "status": "not_started"
+        },
+        {
+          "id": "d25-dev-1",
+          "track": "DEV",
+          "title": "Connect a React front end to the API (fetch/axios, CORS)",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d25-cs-1",
+          "track": "CS",
+          "title": "C++ STL for coding tests: vector, map, set, sort, pair",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d25-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Reading comprehension (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d25-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Articles: a, an, the) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d25-job-9",
+          "track": "JOB",
+          "title": "Fix LinkedIn: photo, headline, About, skills",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 26,
+      "date": "2026-11-26",
+      "weekday": "Thu",
+      "week": 4,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Trees mixed",
+      "grammarTopic": "Articles: a, an, the",
+      "tasks": [
+        {
+          "id": "d26-dsa-1",
+          "track": "DSA",
+          "title": "LC 450: Delete Node in a BST",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/delete-node-in-a-bst/",
+          "leetcode": 450,
+          "status": "not_started"
+        },
+        {
+          "id": "d26-dsa-2",
+          "track": "DSA",
+          "title": "LC 113: Path Sum II",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/path-sum-ii/",
+          "leetcode": 113,
+          "status": "not_started"
+        },
+        {
+          "id": "d26-dev-1",
+          "track": "DEV",
+          "title": "Project 1 planning: Milestone Tracker. Features list, DB schema, rough wireframes",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d26-cs-1",
+          "track": "CS",
+          "title": "CN + OOPs: 20 rapid-fire questions aloud",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d26-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Sentence correction and fill in the blanks (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d26-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Articles: a, an, the) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d26-job-9",
+          "track": "JOB",
+          "title": "Create profiles: TCS NextStep (IT category), Infosys careers, Cognizant careers, Accenture careers. Check your 10th/12th/degree marks meet 60%",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 27,
+      "date": "2026-11-27",
+      "weekday": "Fri",
+      "week": 4,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Revision",
+      "grammarTopic": "Articles: a, an, the",
+      "tasks": [
+        {
+          "id": "d27-dsa-1",
+          "track": "DSA",
+          "title": "Re-solve 3 tree problems you marked 'done with help', without looking",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d27-dev-1",
+          "track": "DEV",
+          "title": "Project 1: repo with client/ and server/, Express server + DB connection",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d27-cs-1",
+          "track": "CS",
+          "title": "Make a 1-page OOPs cheat sheet",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d27-apt-1",
+          "track": "APT",
+          "title": "Timed sectional aptitude mock (quant, reasoning, verbal), then review every mistake",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d27-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Articles: a, an, the) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d27-job-9",
+          "track": "JOB",
+          "title": "Set up Naukri, Wellfound, LinkedIn job alerts",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 28,
+      "date": "2026-11-28",
+      "weekday": "Sat",
+      "week": 4,
+      "phase": 1,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Articles: a, an, the",
+      "tasks": [
+        {
+          "id": "d28-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d28-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d28-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d28-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d28-job-9",
+          "track": "JOB",
+          "title": "List 50 companies hiring freshers (service, mid-size, startups); Bengaluru, Chennai, Mumbai first",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 29,
+      "date": "2026-11-29",
+      "weekday": "Sun",
+      "week": 5,
+      "phase": 1,
+      "type": "normal",
+      "theme": "Timed mock (60 min)",
+      "grammarTopic": "Prepositions (in, on, at, for, since)",
+      "tasks": [
+        {
+          "id": "d29-dsa-1",
+          "track": "DSA",
+          "title": "LC 1448: Count Good Nodes in Binary Tree",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+          "leetcode": 1448,
+          "status": "not_started"
+        },
+        {
+          "id": "d29-dsa-2",
+          "track": "DSA",
+          "title": "LC 540: Single Element in a Sorted Array",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/single-element-in-a-sorted-array/",
+          "leetcode": 540,
+          "status": "not_started"
+        },
+        {
+          "id": "d29-dev-1",
+          "track": "DEV",
+          "title": "Project 1: User model + signup/login routes",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d29-cs-1",
+          "track": "CS",
+          "title": "Make a 1-page CN cheat sheet",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d29-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Para jumbles (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d29-comm-1",
+          "track": "COMM",
+          "title": "Read aloud 10 min + grammar exercise (Prepositions (in, on, at, for, since)) + 2-min voice note explaining today's DSA problem",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d29-job-9",
+          "track": "JOB",
+          "title": "Write a referral message template; send it to 3 MIET seniors",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 30,
+      "date": "2026-11-30",
+      "weekday": "Mon",
+      "week": 5,
+      "phase": 1,
+      "type": "review",
+      "theme": "Day 30 milestone review",
+      "grammarTopic": "Prepositions (in, on, at, for, since)",
+      "tasks": [
+        {
+          "id": "d30-dsa-1",
+          "track": "DSA",
+          "title": "Solve today's LeetCode daily problem; count total problems solved",
+          "minutes": 45,
+          "status": "not_started"
+        },
+        {
+          "id": "d30-dev-1",
+          "track": "DEV",
+          "title": "Go through the Day 30 milestone checklist; push everything to GitHub",
+          "minutes": 60,
+          "status": "not_started"
+        },
+        {
+          "id": "d30-cs-1",
+          "track": "CS",
+          "title": "Write a short reflection: what worked, what to cut, targets for the next 30 days",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d30-comm-1",
+          "track": "COMM",
+          "title": "Record your self-introduction and compare it with the last recording",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d30-job-9",
+          "track": "JOB",
+          "title": "Resume v1 done: apply to your first 3 jobs",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 31,
+      "date": "2026-12-01",
+      "weekday": "Tue",
+      "week": 5,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Two pointers",
+      "grammarTopic": "Prepositions (in, on, at, for, since)",
+      "tasks": [
+        {
+          "id": "d31-dsa-1",
+          "track": "DSA",
+          "title": "LC 125: Valid Palindrome",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/valid-palindrome/",
+          "leetcode": 125,
+          "status": "not_started"
+        },
+        {
+          "id": "d31-dsa-2",
+          "track": "DSA",
+          "title": "LC 167: Two Sum II - Input Array Is Sorted",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+          "leetcode": 167,
+          "status": "not_started"
+        },
+        {
+          "id": "d31-dev-1",
+          "track": "DEV",
+          "title": "Project 1: script to import plan.json (this plan) into MongoDB",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d31-cs-1",
+          "track": "CS",
+          "title": "DBMS: what a DBMS is; primary, foreign, candidate keys",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d31-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Number system, divisibility (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d31-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Tell me about yourself (2-minute version)'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d31-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 32,
+      "date": "2026-12-02",
+      "weekday": "Wed",
+      "week": 5,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Two pointers",
+      "grammarTopic": "Prepositions (in, on, at, for, since)",
+      "tasks": [
+        {
+          "id": "d32-dsa-1",
+          "track": "DSA",
+          "title": "LC 15: 3Sum",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/3sum/",
+          "leetcode": 15,
+          "status": "not_started"
+        },
+        {
+          "id": "d32-dsa-2",
+          "track": "DSA",
+          "title": "LC 11: Container With Most Water",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/container-with-most-water/",
+          "leetcode": 11,
+          "status": "not_started"
+        },
+        {
+          "id": "d32-dev-1",
+          "track": "DEV",
+          "title": "Project 1 API: GET /days, GET /days/:n, PATCH /tasks/:id",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d32-cs-1",
+          "track": "CS",
+          "title": "DBMS: ER model, relational model",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d32-apt-1",
+          "track": "APT",
+          "title": "Aptitude: HCF and LCM (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d32-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Why is there a gap since graduation?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d32-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 33,
+      "date": "2026-12-03",
+      "weekday": "Thu",
+      "week": 5,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Sliding window",
+      "grammarTopic": "Prepositions (in, on, at, for, since)",
+      "tasks": [
+        {
+          "id": "d33-dsa-1",
+          "track": "DSA",
+          "title": "LC 643: Maximum Average Subarray I",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/maximum-average-subarray-i/",
+          "leetcode": 643,
+          "status": "not_started"
+        },
+        {
+          "id": "d33-dsa-2",
+          "track": "DSA",
+          "title": "LC 3: Longest Substring Without Repeating Characters",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+          "leetcode": 3,
+          "status": "not_started"
+        },
+        {
+          "id": "d33-dev-1",
+          "track": "DEV",
+          "title": "Project 1 API: progress per track + streak calculation",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d33-cs-1",
+          "track": "CS",
+          "title": "SQL: SELECT, WHERE, ORDER BY, GROUP BY, HAVING",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d33-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Percentages (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d33-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'What are your strengths?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d33-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 34,
+      "date": "2026-12-04",
+      "weekday": "Fri",
+      "week": 5,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Sliding window",
+      "grammarTopic": "Prepositions (in, on, at, for, since)",
+      "tasks": [
+        {
+          "id": "d34-dsa-1",
+          "track": "DSA",
+          "title": "LC 424: Longest Repeating Character Replacement",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+          "leetcode": 424,
+          "status": "not_started"
+        },
+        {
+          "id": "d34-dsa-2",
+          "track": "DSA",
+          "title": "LC 567: Permutation in String",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/permutation-in-string/",
+          "leetcode": 567,
+          "status": "not_started"
+        },
+        {
+          "id": "d34-dev-1",
+          "track": "DEV",
+          "title": "Project 1 front end: routing, login and signup pages",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d34-cs-1",
+          "track": "CS",
+          "title": "SQL: JOINs and subqueries",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d34-apt-1",
+          "track": "APT",
+          "title": "Timed sectional aptitude mock (quant, reasoning, verbal), then review every mistake",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d34-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'What is your weakness?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d34-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 35,
+      "date": "2026-12-05",
+      "weekday": "Sat",
+      "week": 5,
+      "phase": 2,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Prepositions (in, on, at, for, since)",
+      "tasks": [
+        {
+          "id": "d35-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d35-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d35-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d35-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d35-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 36,
+      "date": "2026-12-06",
+      "weekday": "Sun",
+      "week": 6,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Prefix sum / hashing",
+      "grammarTopic": "Subject-verb agreement",
+      "tasks": [
+        {
+          "id": "d36-dsa-1",
+          "track": "DSA",
+          "title": "LC 560: Subarray Sum Equals K",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/subarray-sum-equals-k/",
+          "leetcode": 560,
+          "status": "not_started"
+        },
+        {
+          "id": "d36-dsa-2",
+          "track": "DSA",
+          "title": "LC 238: Product of Array Except Self",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/product-of-array-except-self/",
+          "leetcode": 238,
+          "status": "not_started"
+        },
+        {
+          "id": "d36-dev-1",
+          "track": "DEV",
+          "title": "Auth flow: store JWT, protected routes",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d36-cs-1",
+          "track": "CS",
+          "title": "DBMS: normalization (1NF, 2NF, 3NF, BCNF)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d36-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Profit and loss (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d36-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Why should we hire you?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d36-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 37,
+      "date": "2026-12-07",
+      "weekday": "Mon",
+      "week": 6,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Stack",
+      "grammarTopic": "Subject-verb agreement",
+      "tasks": [
+        {
+          "id": "d37-dsa-1",
+          "track": "DSA",
+          "title": "LC 20: Valid Parentheses",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/valid-parentheses/",
+          "leetcode": 20,
+          "status": "not_started"
+        },
+        {
+          "id": "d37-dsa-2",
+          "track": "DSA",
+          "title": "LC 739: Daily Temperatures",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/daily-temperatures/",
+          "leetcode": 739,
+          "status": "not_started"
+        },
+        {
+          "id": "d37-dev-1",
+          "track": "DEV",
+          "title": "Today page: today's tasks with status dropdowns",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d37-cs-1",
+          "track": "CS",
+          "title": "DBMS: transactions, ACID, indexing",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d37-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Simple and compound interest (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d37-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Explain your to-do and weather mini projects'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d37-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 38,
+      "date": "2026-12-08",
+      "weekday": "Tue",
+      "week": 6,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Heaps",
+      "grammarTopic": "Subject-verb agreement",
+      "tasks": [
+        {
+          "id": "d38-dsa-1",
+          "track": "DSA",
+          "title": "LC 703: Kth Largest Element in a Stream",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+          "leetcode": 703,
+          "status": "not_started"
+        },
+        {
+          "id": "d38-dsa-2",
+          "track": "DSA",
+          "title": "LC 1046: Last Stone Weight",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/last-stone-weight/",
+          "leetcode": 1046,
+          "status": "not_started"
+        },
+        {
+          "id": "d38-dev-1",
+          "track": "DEV",
+          "title": "90-day grid: each day coloured by completion",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d38-cs-1",
+          "track": "CS",
+          "title": "SQL practice: 5 questions from LeetCode SQL 50",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d38-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Ratio and proportion (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d38-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Where do you see yourself in 3 years?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d38-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 39,
+      "date": "2026-12-09",
+      "weekday": "Wed",
+      "week": 6,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Heaps",
+      "grammarTopic": "Subject-verb agreement",
+      "tasks": [
+        {
+          "id": "d39-dsa-1",
+          "track": "DSA",
+          "title": "LC 215: Kth Largest Element in an Array",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+          "leetcode": 215,
+          "status": "not_started"
+        },
+        {
+          "id": "d39-dsa-2",
+          "track": "DSA",
+          "title": "LC 347: Top K Frequent Elements",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+          "leetcode": 347,
+          "status": "not_started"
+        },
+        {
+          "id": "d39-dev-1",
+          "track": "DEV",
+          "title": "Dashboard: progress per track + milestone checklists",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d39-cs-1",
+          "track": "CS",
+          "title": "OS: process vs thread, process states, context switch",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d39-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Averages, mixtures and alligations (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d39-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Why do you want to join our company?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d39-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 40,
+      "date": "2026-12-10",
+      "weekday": "Thu",
+      "week": 6,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Heaps",
+      "grammarTopic": "Subject-verb agreement",
+      "tasks": [
+        {
+          "id": "d40-dsa-1",
+          "track": "DSA",
+          "title": "LC 973: K Closest Points to Origin",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/k-closest-points-to-origin/",
+          "leetcode": 973,
+          "status": "not_started"
+        },
+        {
+          "id": "d40-dsa-2",
+          "track": "DSA",
+          "title": "LC 621: Task Scheduler",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/task-scheduler/",
+          "leetcode": 621,
+          "status": "not_started"
+        },
+        {
+          "id": "d40-dev-1",
+          "track": "DEV",
+          "title": "Notes per day + Minimum Day toggle",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d40-cs-1",
+          "track": "CS",
+          "title": "OS: CPU scheduling (FCFS, SJF, Round Robin)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d40-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Time and work, pipes and cisterns (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d40-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Tell me about a challenge you faced and how you solved it'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d40-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 41,
+      "date": "2026-12-11",
+      "weekday": "Fri",
+      "week": 6,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Backtracking",
+      "grammarTopic": "Subject-verb agreement",
+      "tasks": [
+        {
+          "id": "d41-dsa-1",
+          "track": "DSA",
+          "title": "LC 78: Subsets",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/subsets/",
+          "leetcode": 78,
+          "status": "not_started"
+        },
+        {
+          "id": "d41-dsa-2",
+          "track": "DSA",
+          "title": "LC 46: Permutations",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/permutations/",
+          "leetcode": 46,
+          "status": "not_started"
+        },
+        {
+          "id": "d41-dev-1",
+          "track": "DEV",
+          "title": "Styling with Tailwind; make it mobile-friendly",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d41-cs-1",
+          "track": "CS",
+          "title": "OS: deadlock, semaphores, mutex",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d41-apt-1",
+          "track": "APT",
+          "title": "Timed sectional aptitude mock (quant, reasoning, verbal), then review every mistake",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d41-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Describe a time you failed'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d41-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 42,
+      "date": "2026-12-12",
+      "weekday": "Sat",
+      "week": 6,
+      "phase": 2,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Subject-verb agreement",
+      "tasks": [
+        {
+          "id": "d42-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d42-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d42-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d42-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d42-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 43,
+      "date": "2026-12-13",
+      "weekday": "Sun",
+      "week": 7,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Backtracking",
+      "grammarTopic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')",
+      "tasks": [
+        {
+          "id": "d43-dsa-1",
+          "track": "DSA",
+          "title": "LC 39: Combination Sum",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/combination-sum/",
+          "leetcode": 39,
+          "status": "not_started"
+        },
+        {
+          "id": "d43-dsa-2",
+          "track": "DSA",
+          "title": "LC 90: Subsets II",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/subsets-ii/",
+          "leetcode": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d43-dev-1",
+          "track": "DEV",
+          "title": "Error handling, loading states, form validation",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d43-cs-1",
+          "track": "CS",
+          "title": "OS: memory management, paging, virtual memory",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d43-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Time, speed and distance (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d43-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Are you comfortable relocating or working in shifts?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d43-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 44,
+      "date": "2026-12-14",
+      "weekday": "Mon",
+      "week": 7,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Backtracking",
+      "grammarTopic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')",
+      "tasks": [
+        {
+          "id": "d44-dsa-1",
+          "track": "DSA",
+          "title": "LC 17: Letter Combinations of a Phone Number",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+          "leetcode": 17,
+          "status": "not_started"
+        },
+        {
+          "id": "d44-dsa-2",
+          "track": "DSA",
+          "title": "LC 79: Word Search",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/word-search/",
+          "leetcode": 79,
+          "status": "not_started"
+        },
+        {
+          "id": "d44-dev-1",
+          "track": "DEV",
+          "title": "Cleanup: folder structure, environment variables, remove dead code",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d44-cs-1",
+          "track": "CS",
+          "title": "DBMS + OS: answer 30 top questions aloud",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d44-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Trains and boats (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d44-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Explain Project 1 (Milestone Tracker) in 2 minutes'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d44-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 45,
+      "date": "2026-12-15",
+      "weekday": "Tue",
+      "week": 7,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Graphs intro",
+      "grammarTopic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')",
+      "tasks": [
+        {
+          "id": "d45-dsa-1",
+          "track": "DSA",
+          "title": "Learn adjacency list, BFS and DFS on paper first",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d45-dsa-2",
+          "track": "DSA",
+          "title": "LC 733: Flood Fill",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/flood-fill/",
+          "leetcode": 733,
+          "status": "not_started"
+        },
+        {
+          "id": "d45-dev-1",
+          "track": "DEV",
+          "title": "Test every API route in Postman; fix bugs",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d45-ai-1",
+          "track": "AI",
+          "title": "Python crash course: syntax, lists, dicts, functions",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d45-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Permutations and combinations (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d45-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'What did you learn from your AWS Cloud Practitioner certification?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d45-job-9",
+          "track": "JOB",
+          "title": "Look for January drives (TCS NQT, Cognizant GenC, Capgemini, LTIMindtree) and apply to any that are open",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 46,
+      "date": "2026-12-16",
+      "weekday": "Wed",
+      "week": 7,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Graphs: grid DFS/BFS",
+      "grammarTopic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')",
+      "tasks": [
+        {
+          "id": "d46-dsa-1",
+          "track": "DSA",
+          "title": "LC 200: Number of Islands",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/number-of-islands/",
+          "leetcode": 200,
+          "status": "not_started"
+        },
+        {
+          "id": "d46-dsa-2",
+          "track": "DSA",
+          "title": "LC 695: Max Area of Island",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/max-area-of-island/",
+          "leetcode": 695,
+          "status": "not_started"
+        },
+        {
+          "id": "d46-dev-1",
+          "track": "DEV",
+          "title": "Deployment basics: hosting, env vars, builds, what CI/CD is",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d46-ai-1",
+          "track": "AI",
+          "title": "Python: classes, files, list comprehensions",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d46-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Probability (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d46-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'How do you handle pressure and deadlines?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d46-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 47,
+      "date": "2026-12-17",
+      "weekday": "Thu",
+      "week": 7,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Graphs: BFS",
+      "grammarTopic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')",
+      "tasks": [
+        {
+          "id": "d47-dsa-1",
+          "track": "DSA",
+          "title": "LC 133: Clone Graph",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/clone-graph/",
+          "leetcode": 133,
+          "status": "not_started"
+        },
+        {
+          "id": "d47-dsa-2",
+          "track": "DSA",
+          "title": "LC 994: Rotting Oranges",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/rotting-oranges/",
+          "leetcode": 994,
+          "status": "not_started"
+        },
+        {
+          "id": "d47-dev-1",
+          "track": "DEV",
+          "title": "Deploy: backend on Render, frontend on Vercel, DB on MongoDB Atlas",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d47-ai-1",
+          "track": "AI",
+          "title": "NumPy basics",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d47-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Data interpretation (tables, charts) (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d47-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Tell me about working in a team (college project)'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d47-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 48,
+      "date": "2026-12-18",
+      "weekday": "Fri",
+      "week": 7,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Graphs: components",
+      "grammarTopic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')",
+      "tasks": [
+        {
+          "id": "d48-dsa-1",
+          "track": "DSA",
+          "title": "LC 547: Number of Provinces",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/number-of-provinces/",
+          "leetcode": 547,
+          "status": "not_started"
+        },
+        {
+          "id": "d48-dsa-2",
+          "track": "DSA",
+          "title": "LC 1971: Find if Path Exists in Graph",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+          "leetcode": 1971,
+          "status": "not_started"
+        },
+        {
+          "id": "d48-dev-1",
+          "track": "DEV",
+          "title": "Fix production bugs; README with screenshots + live link",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d48-ai-1",
+          "track": "AI",
+          "title": "pandas: DataFrames, CSV, filtering, groupby",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d48-apt-1",
+          "track": "APT",
+          "title": "Timed NQT-style mock: numerical, verbal and reasoning sections + 2 coding problems in C++",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d48-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'What motivates you?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d48-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 49,
+      "date": "2026-12-19",
+      "weekday": "Sat",
+      "week": 7,
+      "phase": 2,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Common Indian-English errors ('revert back', 'I am having', 'do the needful')",
+      "tasks": [
+        {
+          "id": "d49-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d49-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d49-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d49-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d49-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 50,
+      "date": "2026-12-20",
+      "weekday": "Sun",
+      "week": 8,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Graphs: topological sort",
+      "grammarTopic": "Conditionals (if-sentences)",
+      "tasks": [
+        {
+          "id": "d50-dsa-1",
+          "track": "DSA",
+          "title": "LC 207: Course Schedule",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/course-schedule/",
+          "leetcode": 207,
+          "status": "not_started"
+        },
+        {
+          "id": "d50-dsa-2",
+          "track": "DSA",
+          "title": "LC 210: Course Schedule II",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/course-schedule-ii/",
+          "leetcode": 210,
+          "status": "not_started"
+        },
+        {
+          "id": "d50-dev-1",
+          "track": "DEV",
+          "title": "AWS: launch EC2, SSH in, install Node, run the backend",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d50-ai-1",
+          "track": "AI",
+          "title": "matplotlib basics",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d50-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Number and letter series (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d50-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'What do you know about service vs product companies?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d50-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 51,
+      "date": "2026-12-21",
+      "weekday": "Mon",
+      "week": 8,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Graphs",
+      "grammarTopic": "Conditionals (if-sentences)",
+      "tasks": [
+        {
+          "id": "d51-dsa-1",
+          "track": "DSA",
+          "title": "LC 785: Is Graph Bipartite?",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/is-graph-bipartite/",
+          "leetcode": 785,
+          "status": "not_started"
+        },
+        {
+          "id": "d51-dsa-2",
+          "track": "DSA",
+          "title": "LC 417: Pacific Atlantic Water Flow",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+          "leetcode": 417,
+          "status": "not_started"
+        },
+        {
+          "id": "d51-dev-1",
+          "track": "DEV",
+          "title": "AWS: Nginx reverse proxy + PM2; S3 for static hosting",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d51-ai-1",
+          "track": "AI",
+          "title": "ML intro: supervised vs unsupervised, train/test split",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d51-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Coding-decoding (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d51-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Do you have any questions for us? (prepare 3)'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d51-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 52,
+      "date": "2026-12-22",
+      "weekday": "Tue",
+      "week": 8,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Shortest path (BFS, Dijkstra)",
+      "grammarTopic": "Conditionals (if-sentences)",
+      "tasks": [
+        {
+          "id": "d52-dsa-1",
+          "track": "DSA",
+          "title": "LC 1091: Shortest Path in Binary Matrix",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+          "leetcode": 1091,
+          "status": "not_started"
+        },
+        {
+          "id": "d52-dsa-2",
+          "track": "DSA",
+          "title": "LC 743: Network Delay Time",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/network-delay-time/",
+          "leetcode": 743,
+          "status": "not_started"
+        },
+        {
+          "id": "d52-dev-1",
+          "track": "DEV",
+          "title": "Docker basics: write a Dockerfile for the backend",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d52-ai-1",
+          "track": "AI",
+          "title": "Linear regression (concept + scikit-learn)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d52-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Blood relations (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d52-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Why MERN? Why web development?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d52-job-9",
+          "track": "JOB",
+          "title": "Check TCS NextStep for a new NQT drive and click Apply for Drive",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 53,
+      "date": "2026-12-23",
+      "weekday": "Wed",
+      "week": 8,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Union-Find",
+      "grammarTopic": "Conditionals (if-sentences)",
+      "tasks": [
+        {
+          "id": "d53-dsa-1",
+          "track": "DSA",
+          "title": "LC 684: Redundant Connection",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/redundant-connection/",
+          "leetcode": 684,
+          "status": "not_started"
+        },
+        {
+          "id": "d53-dsa-2",
+          "track": "DSA",
+          "title": "LC 1319: Number of Operations to Make Network Connected",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
+          "leetcode": 1319,
+          "status": "not_started"
+        },
+        {
+          "id": "d53-dev-1",
+          "track": "DEV",
+          "title": "Extra feature: progress charts (Recharts)",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d53-ai-1",
+          "track": "AI",
+          "title": "Logistic regression; accuracy, precision, recall",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d53-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Directions (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d53-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'How do you keep learning new things?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d53-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 54,
+      "date": "2026-12-24",
+      "weekday": "Thu",
+      "week": 8,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Graphs mixed",
+      "grammarTopic": "Conditionals (if-sentences)",
+      "tasks": [
+        {
+          "id": "d54-dsa-1",
+          "track": "DSA",
+          "title": "LC 802: Find Eventual Safe States",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/find-eventual-safe-states/",
+          "leetcode": 802,
+          "status": "not_started"
+        },
+        {
+          "id": "d54-dsa-2",
+          "track": "DSA",
+          "title": "LC 130: Surrounded Regions",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/surrounded-regions/",
+          "leetcode": 130,
+          "status": "not_started"
+        },
+        {
+          "id": "d54-dev-1",
+          "track": "DEV",
+          "title": "Polish UI; README sections: features, tech stack, architecture",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d54-ai-1",
+          "track": "AI",
+          "title": "Decision trees and random forests",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d54-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Seating arrangement (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d54-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Explain the hardest bug you fixed'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d54-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 55,
+      "date": "2026-12-25",
+      "weekday": "Fri",
+      "week": 8,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Revision",
+      "grammarTopic": "Conditionals (if-sentences)",
+      "tasks": [
+        {
+          "id": "d55-dsa-1",
+          "track": "DSA",
+          "title": "Re-solve 2 graph problems you found hardest",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d55-dev-1",
+          "track": "DEV",
+          "title": "Record a 2-minute demo video; post it on LinkedIn",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d55-ai-1",
+          "track": "AI",
+          "title": "ML notebook: mini project on a Kaggle dataset (e.g. Titanic)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d55-apt-1",
+          "track": "APT",
+          "title": "Timed NQT-style mock: numerical, verbal and reasoning sections + 2 coding problems in C++",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d55-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'What does your daily routine look like?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d55-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 56,
+      "date": "2026-12-26",
+      "weekday": "Sat",
+      "week": 8,
+      "phase": 2,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Conditionals (if-sentences)",
+      "tasks": [
+        {
+          "id": "d56-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d56-dev-1",
+          "track": "DEV",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d56-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d56-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d56-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 57,
+      "date": "2026-12-27",
+      "weekday": "Sun",
+      "week": 9,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Hashing mixed",
+      "grammarTopic": "Active vs passive voice",
+      "tasks": [
+        {
+          "id": "d57-dsa-1",
+          "track": "DSA",
+          "title": "LC 49: Group Anagrams",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/group-anagrams/",
+          "leetcode": 49,
+          "status": "not_started"
+        },
+        {
+          "id": "d57-dsa-2",
+          "track": "DSA",
+          "title": "LC 128: Longest Consecutive Sequence",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+          "leetcode": 128,
+          "status": "not_started"
+        },
+        {
+          "id": "d57-job-1",
+          "track": "JOB",
+          "title": "Resume v2: add Project 1 with clear, honest bullet points",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d57-ai-1",
+          "track": "AI",
+          "title": "Finish the ML notebook; push to GitHub",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d57-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Syllogisms (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d57-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Tell me about yourself (2-minute version)'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d57-job-9",
+          "track": "JOB",
+          "title": "Update all job profiles with resume v2",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 58,
+      "date": "2026-12-28",
+      "weekday": "Mon",
+      "week": 9,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Design",
+      "grammarTopic": "Active vs passive voice",
+      "tasks": [
+        {
+          "id": "d58-dsa-1",
+          "track": "DSA",
+          "title": "LC 146: LRU Cache",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/lru-cache/",
+          "leetcode": 146,
+          "status": "not_started"
+        },
+        {
+          "id": "d58-dsa-2",
+          "track": "DSA",
+          "title": "LC 155: Min Stack",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/min-stack/",
+          "leetcode": 155,
+          "status": "not_started"
+        },
+        {
+          "id": "d58-dev-1",
+          "track": "DEV",
+          "title": "Revise JS interview topics: closures, event loop, promises, hoisting",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d58-ai-1",
+          "track": "AI",
+          "title": "Overfitting, cross-validation, feature engineering",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d58-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Puzzles (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d58-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'Why is there a gap since graduation?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d58-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 59,
+      "date": "2026-12-29",
+      "weekday": "Tue",
+      "week": 9,
+      "phase": 2,
+      "type": "normal",
+      "theme": "Timed mock (90 min)",
+      "grammarTopic": "Active vs passive voice",
+      "tasks": [
+        {
+          "id": "d59-dsa-1",
+          "track": "DSA",
+          "title": "LC 542: 01 Matrix",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/01-matrix/",
+          "leetcode": 542,
+          "status": "not_started"
+        },
+        {
+          "id": "d59-dsa-2",
+          "track": "DSA",
+          "title": "LC 1004: Max Consecutive Ones III",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+          "leetcode": 1004,
+          "status": "not_started"
+        },
+        {
+          "id": "d59-dev-1",
+          "track": "DEV",
+          "title": "Revise React + Node interview topics",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d59-ai-1",
+          "track": "AI",
+          "title": "Text data: bag of words, TF-IDF",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d59-apt-1",
+          "track": "APT",
+          "title": "Aptitude: Data sufficiency (concept + 15 questions)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d59-comm-1",
+          "track": "COMM",
+          "title": "HR question: 'What are your strengths?'. Write the answer, say it 3 times, record once",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d59-job-9",
+          "track": "JOB",
+          "title": "Mass-hiring season starts in January: list every open drive and its deadline",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 60,
+      "date": "2026-12-30",
+      "weekday": "Wed",
+      "week": 9,
+      "phase": 2,
+      "type": "review",
+      "theme": "Day 60 milestone review",
+      "grammarTopic": "Active vs passive voice",
+      "tasks": [
+        {
+          "id": "d60-dsa-1",
+          "track": "DSA",
+          "title": "Solve today's LeetCode daily problem; count total problems solved",
+          "minutes": 45,
+          "status": "not_started"
+        },
+        {
+          "id": "d60-dev-1",
+          "track": "DEV",
+          "title": "Go through the Day 60 milestone checklist; push everything to GitHub",
+          "minutes": 60,
+          "status": "not_started"
+        },
+        {
+          "id": "d60-cs-1",
+          "track": "CS",
+          "title": "Write a short reflection: what worked, what to cut, targets for the next 30 days",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d60-comm-1",
+          "track": "COMM",
+          "title": "Record answers to your 5 hardest HR questions",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d60-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 61,
+      "date": "2026-12-31",
+      "weekday": "Thu",
+      "week": 9,
+      "phase": 3,
+      "type": "normal",
+      "theme": "DP intro (memoization)",
+      "grammarTopic": "Active vs passive voice",
+      "tasks": [
+        {
+          "id": "d61-dsa-1",
+          "track": "DSA",
+          "title": "LC 70: Climbing Stairs",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/climbing-stairs/",
+          "leetcode": 70,
+          "status": "not_started"
+        },
+        {
+          "id": "d61-dsa-2",
+          "track": "DSA",
+          "title": "LC 746: Min Cost Climbing Stairs",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+          "leetcode": 746,
+          "status": "not_started"
+        },
+        {
+          "id": "d61-ai-1",
+          "track": "AI",
+          "title": "LLM basics: tokens, prompts. Get an API key, make your first call from Node",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d61-ai-2",
+          "track": "AI",
+          "title": "ML: confusion matrix, F1 score",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d61-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d61-comm-1",
+          "track": "COMM",
+          "title": "Explain closures out loud, as if to an interviewer",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d61-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 62,
+      "date": "2027-01-01",
+      "weekday": "Fri",
+      "week": 9,
+      "phase": 3,
+      "type": "normal",
+      "theme": "1D DP",
+      "grammarTopic": "Active vs passive voice",
+      "tasks": [
+        {
+          "id": "d62-dsa-1",
+          "track": "DSA",
+          "title": "LC 198: House Robber",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/house-robber/",
+          "leetcode": 198,
+          "status": "not_started"
+        },
+        {
+          "id": "d62-dsa-2",
+          "track": "DSA",
+          "title": "LC 213: House Robber II",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/house-robber-ii/",
+          "leetcode": 213,
+          "status": "not_started"
+        },
+        {
+          "id": "d62-ai-1",
+          "track": "AI",
+          "title": "Prompting: system prompts, few-shot, structured JSON output",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d62-ai-2",
+          "track": "AI",
+          "title": "Neural networks: the idea, no maths needed yet",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d62-apt-1",
+          "track": "APT",
+          "title": "Timed NQT-style mock: numerical, verbal and reasoning sections + 2 coding problems in C++",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d62-comm-1",
+          "track": "COMM",
+          "title": "Explain the event loop out loud",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d62-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 63,
+      "date": "2027-01-02",
+      "weekday": "Sat",
+      "week": 9,
+      "phase": 3,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "Active vs passive voice",
+      "tasks": [
+        {
+          "id": "d63-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d63-ai-1",
+          "track": "AI",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d63-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d63-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d63-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 64,
+      "date": "2027-01-03",
+      "weekday": "Sun",
+      "week": 10,
+      "phase": 3,
+      "type": "normal",
+      "theme": "1D DP",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d64-dsa-1",
+          "track": "DSA",
+          "title": "LC 322: Coin Change",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/coin-change/",
+          "leetcode": 322,
+          "status": "not_started"
+        },
+        {
+          "id": "d64-dsa-2",
+          "track": "DSA",
+          "title": "LC 300: Longest Increasing Subsequence",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/longest-increasing-subsequence/",
+          "leetcode": 300,
+          "status": "not_started"
+        },
+        {
+          "id": "d64-ai-1",
+          "track": "AI",
+          "title": "Tool calling: let the model call a function you wrote",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d64-ai-2",
+          "track": "AI",
+          "title": "How LLMs work at a high level: embeddings, attention",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d64-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d64-comm-1",
+          "track": "COMM",
+          "title": "STAR story 1: a challenge you solved",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d64-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 65,
+      "date": "2027-01-04",
+      "weekday": "Mon",
+      "week": 10,
+      "phase": 3,
+      "type": "normal",
+      "theme": "DP",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d65-dsa-1",
+          "track": "DSA",
+          "title": "LC 139: Word Break",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/word-break/",
+          "leetcode": 139,
+          "status": "not_started"
+        },
+        {
+          "id": "d65-dsa-2",
+          "track": "DSA",
+          "title": "LC 62: Unique Paths",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/unique-paths/",
+          "leetcode": 62,
+          "status": "not_started"
+        },
+        {
+          "id": "d65-ai-1",
+          "track": "AI",
+          "title": "Agents: the loop (think, call tool, observe, repeat). Build a tiny CLI agent",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d65-ai-2",
+          "track": "AI",
+          "title": "Embeddings and vector databases (concept)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d65-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d65-comm-1",
+          "track": "COMM",
+          "title": "Explain how JWT auth works in Project 1",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d65-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 66,
+      "date": "2027-01-05",
+      "weekday": "Tue",
+      "week": 10,
+      "phase": 3,
+      "type": "normal",
+      "theme": "2D DP",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d66-dsa-1",
+          "track": "DSA",
+          "title": "LC 64: Minimum Path Sum",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/minimum-path-sum/",
+          "leetcode": 64,
+          "status": "not_started"
+        },
+        {
+          "id": "d66-dsa-2",
+          "track": "DSA",
+          "title": "LC 1143: Longest Common Subsequence",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/longest-common-subsequence/",
+          "leetcode": 1143,
+          "status": "not_started"
+        },
+        {
+          "id": "d66-ai-1",
+          "track": "AI",
+          "title": "RAG basics: embeddings, vector search. Q&A over your own notes",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d66-ai-2",
+          "track": "AI",
+          "title": "Read 1 article on evaluating LLM apps",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d66-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d66-comm-1",
+          "track": "COMM",
+          "title": "STAR story 2: learning something fast",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d66-job-9",
+          "track": "JOB",
+          "title": "Check TCS NextStep, Cognizant, Infosys, Accenture portals for open drives",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 67,
+      "date": "2027-01-06",
+      "weekday": "Wed",
+      "week": 10,
+      "phase": 3,
+      "type": "normal",
+      "theme": "2D DP",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d67-dsa-1",
+          "track": "DSA",
+          "title": "LC 72: Edit Distance",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/edit-distance/",
+          "leetcode": 72,
+          "status": "not_started"
+        },
+        {
+          "id": "d67-dsa-2",
+          "track": "DSA",
+          "title": "LC 416: Partition Equal Subset Sum",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/partition-equal-subset-sum/",
+          "leetcode": 416,
+          "status": "not_started"
+        },
+        {
+          "id": "d67-ai-1",
+          "track": "AI",
+          "title": "Agent framework: try Vercel AI SDK or LangChain.js",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d67-cs-1",
+          "track": "CS",
+          "title": "JS interview Q&A: event loop, closures, hoisting, promises",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d67-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d67-comm-1",
+          "track": "COMM",
+          "title": "Explain REST APIs simply",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d67-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 68,
+      "date": "2027-01-07",
+      "weekday": "Thu",
+      "week": 10,
+      "phase": 3,
+      "type": "normal",
+      "theme": "DP",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d68-dsa-1",
+          "track": "DSA",
+          "title": "LC 518: Coin Change II",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/coin-change-ii/",
+          "leetcode": 518,
+          "status": "not_started"
+        },
+        {
+          "id": "d68-dsa-2",
+          "track": "DSA",
+          "title": "LC 5: Longest Palindromic Substring",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/longest-palindromic-substring/",
+          "leetcode": 5,
+          "status": "not_started"
+        },
+        {
+          "id": "d68-ai-1",
+          "track": "AI",
+          "title": "Project 1 AI feature: Study Coach agent with tools getTodayTasks and getStreak",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d68-cs-1",
+          "track": "CS",
+          "title": "React interview Q&A: virtual DOM, hooks, keys",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d68-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d68-comm-1",
+          "track": "COMM",
+          "title": "Explain how you deployed Project 1 on AWS",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d68-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 69,
+      "date": "2027-01-08",
+      "weekday": "Fri",
+      "week": 10,
+      "phase": 3,
+      "type": "normal",
+      "theme": "DP",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d69-dsa-1",
+          "track": "DSA",
+          "title": "Re-solve 1 DP problem from this week",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d69-dsa-2",
+          "track": "DSA",
+          "title": "LC 152: Maximum Product Subarray",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/maximum-product-subarray/",
+          "leetcode": 152,
+          "status": "not_started"
+        },
+        {
+          "id": "d69-ai-1",
+          "track": "AI",
+          "title": "Study Coach: chat UI in React",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d69-cs-1",
+          "track": "CS",
+          "title": "Node/Express interview Q&A: middleware, REST, JWT",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d69-apt-1",
+          "track": "APT",
+          "title": "Timed NQT-style mock: numerical, verbal and reasoning sections + 2 coding problems in C++",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d69-comm-1",
+          "track": "COMM",
+          "title": "STAR story 3: teamwork",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d69-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 70,
+      "date": "2027-01-09",
+      "weekday": "Sat",
+      "week": 10,
+      "phase": 3,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d70-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d70-ai-1",
+          "track": "AI",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d70-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d70-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d70-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 71,
+      "date": "2027-01-10",
+      "weekday": "Sun",
+      "week": 11,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Greedy",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d71-dsa-1",
+          "track": "DSA",
+          "title": "LC 55: Jump Game",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/jump-game/",
+          "leetcode": 55,
+          "status": "not_started"
+        },
+        {
+          "id": "d71-dsa-2",
+          "track": "DSA",
+          "title": "LC 45: Jump Game II",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/jump-game-ii/",
+          "leetcode": 45,
+          "status": "not_started"
+        },
+        {
+          "id": "d71-ai-1",
+          "track": "AI",
+          "title": "Study Coach: guardrails, error handling, cost limits; deploy",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d71-cs-1",
+          "track": "CS",
+          "title": "MongoDB + SQL interview Q&A: indexes, joins, aggregation",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d71-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d71-comm-1",
+          "track": "COMM",
+          "title": "Explain what an AI agent is to a non-technical person",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d71-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 72,
+      "date": "2027-01-11",
+      "weekday": "Mon",
+      "week": 11,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Intervals",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d72-dsa-1",
+          "track": "DSA",
+          "title": "LC 435: Non-overlapping Intervals",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/non-overlapping-intervals/",
+          "leetcode": 435,
+          "status": "not_started"
+        },
+        {
+          "id": "d72-dsa-2",
+          "track": "DSA",
+          "title": "LC 56: Merge Intervals",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/merge-intervals/",
+          "leetcode": 56,
+          "status": "not_started"
+        },
+        {
+          "id": "d72-ai-1",
+          "track": "AI",
+          "title": "README section + LinkedIn post about the agent",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d72-cs-1",
+          "track": "CS",
+          "title": "OOPs revision Q&A",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d72-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d72-comm-1",
+          "track": "COMM",
+          "title": "Explain your Study Coach agent in 2 minutes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d72-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 73,
+      "date": "2027-01-12",
+      "weekday": "Tue",
+      "week": 11,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Greedy",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d73-dsa-1",
+          "track": "DSA",
+          "title": "LC 134: Gas Station",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/gas-station/",
+          "leetcode": 134,
+          "status": "not_started"
+        },
+        {
+          "id": "d73-dsa-2",
+          "track": "DSA",
+          "title": "LC 763: Partition Labels",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/partition-labels/",
+          "leetcode": 763,
+          "status": "not_started"
+        },
+        {
+          "id": "d73-ai-1",
+          "track": "AI",
+          "title": "Research project: question, 2-3 reading sources, 1-page plan (data, method, metric)",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d73-cs-1",
+          "track": "CS",
+          "title": "CN revision Q&A",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d73-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d73-comm-1",
+          "track": "COMM",
+          "title": "Explain your research question and plan",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d73-job-9",
+          "track": "JOB",
+          "title": "Check TCS NextStep, Cognizant, Infosys, Accenture portals for open drives",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 74,
+      "date": "2027-01-13",
+      "weekday": "Wed",
+      "week": 11,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Trie",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d74-dsa-1",
+          "track": "DSA",
+          "title": "LC 208: Implement Trie (Prefix Tree)",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+          "leetcode": 208,
+          "status": "not_started"
+        },
+        {
+          "id": "d74-dsa-2",
+          "track": "DSA",
+          "title": "LC 14: Longest Common Prefix",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/longest-common-prefix/",
+          "leetcode": 14,
+          "status": "not_started"
+        },
+        {
+          "id": "d74-ai-1",
+          "track": "AI",
+          "title": "Get the dataset (resumes + job descriptions); explore it in pandas",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d74-cs-1",
+          "track": "CS",
+          "title": "DBMS revision Q&A",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d74-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d74-comm-1",
+          "track": "COMM",
+          "title": "Explain Project 1 end to end in 2 minutes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d74-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 75,
+      "date": "2027-01-14",
+      "weekday": "Thu",
+      "week": 11,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Bit manipulation",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d75-dsa-1",
+          "track": "DSA",
+          "title": "LC 136: Single Number",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/single-number/",
+          "leetcode": 136,
+          "status": "not_started"
+        },
+        {
+          "id": "d75-dsa-2",
+          "track": "DSA",
+          "title": "LC 191: Number of 1 Bits",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/number-of-1-bits/",
+          "leetcode": 191,
+          "status": "not_started"
+        },
+        {
+          "id": "d75-ai-1",
+          "track": "AI",
+          "title": "Method 1 (baseline): TF-IDF + cosine similarity",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d75-cs-1",
+          "track": "CS",
+          "title": "OS revision Q&A",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d75-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d75-comm-1",
+          "track": "COMM",
+          "title": "HR rapid-fire: answer 5 HR questions in a row",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d75-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 76,
+      "date": "2027-01-15",
+      "weekday": "Fri",
+      "week": 11,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Revision",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d76-dsa-1",
+          "track": "DSA",
+          "title": "Re-solve 3 DP problems without looking",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d76-ai-1",
+          "track": "AI",
+          "title": "Method 2: sentence embeddings (sentence-transformers)",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d76-cs-1",
+          "track": "CS",
+          "title": "System design basics: client-server, load balancer, caching",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d76-apt-1",
+          "track": "APT",
+          "title": "Timed NQT-style mock: numerical, verbal and reasoning sections + 2 coding problems in C++",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d76-comm-1",
+          "track": "COMM",
+          "title": "Explain RAG simply",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d76-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 77,
+      "date": "2027-01-16",
+      "weekday": "Sat",
+      "week": 11,
+      "phase": 3,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d77-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d77-ai-1",
+          "track": "AI",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d77-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d77-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d77-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 78,
+      "date": "2027-01-17",
+      "weekday": "Sun",
+      "week": 12,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Mock interview #1 (60 min)",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d78-dsa-1",
+          "track": "DSA",
+          "title": "LC 287: Find the Duplicate Number",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/find-the-duplicate-number/",
+          "leetcode": 287,
+          "status": "not_started"
+        },
+        {
+          "id": "d78-dsa-2",
+          "track": "DSA",
+          "title": "LC 48: Rotate Image",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/rotate-image/",
+          "leetcode": 48,
+          "status": "not_started"
+        },
+        {
+          "id": "d78-ai-1",
+          "track": "AI",
+          "title": "Method 3: LLM scoring on a small sample",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d78-cs-1",
+          "track": "CS",
+          "title": "Draw Project 1's architecture; explain the trade-offs",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d78-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d78-comm-1",
+          "track": "COMM",
+          "title": "Mock interview day: do the full interview out loud and note mistakes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d78-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 79,
+      "date": "2027-01-18",
+      "weekday": "Mon",
+      "week": 12,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Matrix",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d79-dsa-1",
+          "track": "DSA",
+          "title": "LC 54: Spiral Matrix",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/spiral-matrix/",
+          "leetcode": 54,
+          "status": "not_started"
+        },
+        {
+          "id": "d79-dsa-2",
+          "track": "DSA",
+          "title": "LC 73: Set Matrix Zeroes",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/set-matrix-zeroes/",
+          "leetcode": 73,
+          "status": "not_started"
+        },
+        {
+          "id": "d79-ai-1",
+          "track": "AI",
+          "title": "Evaluation: label 50 resume-job pairs, compute metrics for all 3 methods",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d79-cs-1",
+          "track": "CS",
+          "title": "Read 5 recent TCS/Cognizant/Accenture interview experiences; note repeated questions",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d79-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d79-comm-1",
+          "track": "COMM",
+          "title": "Explain your 3 research methods and why you chose them",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d79-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 80,
+      "date": "2027-01-19",
+      "weekday": "Tue",
+      "week": 12,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Arrays",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d80-dsa-1",
+          "track": "DSA",
+          "title": "LC 75: Sort Colors",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/sort-colors/",
+          "leetcode": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d80-dsa-2",
+          "track": "DSA",
+          "title": "LC 31: Next Permutation",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/next-permutation/",
+          "leetcode": 31,
+          "status": "not_started"
+        },
+        {
+          "id": "d80-ai-1",
+          "track": "AI",
+          "title": "Results table + charts: accuracy, speed, cost",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d80-cs-1",
+          "track": "CS",
+          "title": "Revise your DSA pattern notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d80-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d80-comm-1",
+          "track": "COMM",
+          "title": "Explain the hardest bug you fixed",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d80-job-9",
+          "track": "JOB",
+          "title": "Check TCS NextStep, Cognizant, Infosys, Accenture portals for open drives",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 81,
+      "date": "2027-01-20",
+      "weekday": "Wed",
+      "week": 12,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Contest",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d81-dsa-1",
+          "track": "DSA",
+          "title": "Do a LeetCode weekly or virtual contest (aim: 2 problems)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d81-ai-1",
+          "track": "AI",
+          "title": "Write report part 1: introduction, related work, method",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d81-cs-1",
+          "track": "CS",
+          "title": "Behavioural: polish your 3 STAR stories into written notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d81-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d81-comm-1",
+          "track": "COMM",
+          "title": "Say all 3 STAR stories without notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d81-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 82,
+      "date": "2027-01-21",
+      "weekday": "Thu",
+      "week": 12,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Linked list revisit",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d82-dsa-1",
+          "track": "DSA",
+          "title": "LC 142: Linked List Cycle II",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/linked-list-cycle-ii/",
+          "leetcode": 142,
+          "status": "not_started"
+        },
+        {
+          "id": "d82-dsa-2",
+          "track": "DSA",
+          "title": "LC 24: Swap Nodes in Pairs",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+          "leetcode": 24,
+          "status": "not_started"
+        },
+        {
+          "id": "d82-ai-1",
+          "track": "AI",
+          "title": "Write report part 2: results, limitations, future work",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d82-job-1",
+          "track": "JOB",
+          "title": "Research 30 target companies; note their interview process",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d82-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d82-comm-1",
+          "track": "COMM",
+          "title": "Explain your research results and limitations",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d82-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 83,
+      "date": "2027-01-22",
+      "weekday": "Fri",
+      "week": 12,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Revision",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d83-dsa-1",
+          "track": "DSA",
+          "title": "Re-solve 3 tree problems without looking",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d83-ai-1",
+          "track": "AI",
+          "title": "Clean code + notebook + README; push to GitHub",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d83-cs-1",
+          "track": "CS",
+          "title": "Revise AWS basics: EC2, S3, IAM, VPC",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d83-apt-1",
+          "track": "APT",
+          "title": "Timed NQT-style mock: numerical, verbal and reasoning sections + 2 coding problems in C++",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d83-comm-1",
+          "track": "COMM",
+          "title": "HR rapid-fire: answer 5 HR questions in a row",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d83-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 84,
+      "date": "2027-01-23",
+      "weekday": "Sat",
+      "week": 12,
+      "phase": 3,
+      "type": "catchup",
+      "theme": "Catch-up day",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d84-dsa-1",
+          "track": "DSA",
+          "title": "Catch-up: finish any DSA missed this week. If caught up, re-solve 2 'done with help' problems",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d84-ai-1",
+          "track": "AI",
+          "title": "Catch-up: finish this week's unfinished build work",
+          "minutes": 90,
+          "status": "not_started"
+        },
+        {
+          "id": "d84-cs-1",
+          "track": "CS",
+          "title": "Revise this week's learning notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d84-comm-1",
+          "track": "COMM",
+          "title": "Weekly recap: speak for 3 min about your week and record it",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d84-job-9",
+          "track": "JOB",
+          "title": "Update the application log; follow up on applications older than 7 days",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 85,
+      "date": "2027-01-24",
+      "weekday": "Sun",
+      "week": 13,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Mock interview #2 (60 min)",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d85-dsa-1",
+          "track": "DSA",
+          "title": "LC 162: Find Peak Element",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/find-peak-element/",
+          "leetcode": 162,
+          "status": "not_started"
+        },
+        {
+          "id": "d85-dsa-2",
+          "track": "DSA",
+          "title": "LC 437: Path Sum III",
+          "minutes": 35,
+          "link": "https://leetcode.com/problems/path-sum-iii/",
+          "leetcode": 437,
+          "status": "not_started"
+        },
+        {
+          "id": "d85-ai-1",
+          "track": "AI",
+          "title": "Publish the report as a blog post (Medium/Hashnode) + LinkedIn post",
+          "minutes": 120,
+          "priority": "stretch",
+          "status": "not_started"
+        },
+        {
+          "id": "d85-cs-1",
+          "track": "CS",
+          "title": "CS rapid-fire: 50 questions",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d85-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d85-comm-1",
+          "track": "COMM",
+          "title": "Mock interview day: do the full interview out loud and note mistakes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d85-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 86,
+      "date": "2027-01-25",
+      "weekday": "Mon",
+      "week": 13,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Revision",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d86-dsa-1",
+          "track": "DSA",
+          "title": "Re-solve 3 graph problems without looking",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d86-job-1",
+          "track": "JOB",
+          "title": "Final resume with both projects; GitHub profile README",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d86-cs-1",
+          "track": "CS",
+          "title": "JS/React rapid-fire",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d86-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d86-comm-1",
+          "track": "COMM",
+          "title": "Explain both projects, 2 minutes each",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d86-job-9",
+          "track": "JOB",
+          "title": "Re-apply with the final resume to top-10 targets",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 87,
+      "date": "2027-01-26",
+      "weekday": "Tue",
+      "week": 13,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Contest",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d87-dsa-1",
+          "track": "DSA",
+          "title": "Do a virtual contest (aim: 2 problems)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d87-dev-1",
+          "track": "DEV",
+          "title": "Practice explaining each project in 2 minutes",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d87-ai-1",
+          "track": "AI",
+          "title": "Revise the research project: be ready for 'why this metric?'",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d87-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d87-comm-1",
+          "track": "COMM",
+          "title": "Explain your research to a non-technical friend in 2 minutes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d87-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 88,
+      "date": "2027-01-27",
+      "weekday": "Wed",
+      "week": 13,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Weak-topic practice",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d88-dsa-1",
+          "track": "DSA",
+          "title": "2 mediums from your weakest topic on the tracker",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d88-dev-1",
+          "track": "DEV",
+          "title": "Polish both repos; fix open bugs",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d88-cs-1",
+          "track": "CS",
+          "title": "Mock HR + technical interview (with a friend or online)",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d88-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d88-comm-1",
+          "track": "COMM",
+          "title": "Mock interview day: do the full interview out loud and note mistakes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d88-job-9",
+          "track": "JOB",
+          "title": "Apply to 3 jobs or send 3 referral messages; log them",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 89,
+      "date": "2027-01-28",
+      "weekday": "Thu",
+      "week": 13,
+      "phase": 3,
+      "type": "normal",
+      "theme": "Light day",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d89-dsa-1",
+          "track": "DSA",
+          "title": "Solve today's LeetCode daily problem only",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d89-dev-1",
+          "track": "DEV",
+          "title": "Light: update the tracker, note what worked",
+          "minutes": 120,
+          "status": "not_started"
+        },
+        {
+          "id": "d89-cs-1",
+          "track": "CS",
+          "title": "Light: skim your notes",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d89-apt-1",
+          "track": "APT",
+          "title": "Aptitude: revise your 2 weakest topics from the mock reviews",
+          "minutes": 75,
+          "status": "not_started"
+        },
+        {
+          "id": "d89-comm-1",
+          "track": "COMM",
+          "title": "Light: watch one mock interview video and note good phrases",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d89-job-9",
+          "track": "JOB",
+          "title": "Log all applications; plan follow-ups",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    },
+    {
+      "day": 90,
+      "date": "2027-01-29",
+      "weekday": "Fri",
+      "week": 13,
+      "phase": 3,
+      "type": "review",
+      "theme": "Day 90 milestone review",
+      "grammarTopic": "No new topic: interview language",
+      "tasks": [
+        {
+          "id": "d90-dsa-1",
+          "track": "DSA",
+          "title": "Solve today's LeetCode daily problem; count total problems solved",
+          "minutes": 45,
+          "status": "not_started"
+        },
+        {
+          "id": "d90-dev-1",
+          "track": "DEV",
+          "title": "Go through the Day 90 milestone checklist; push everything to GitHub",
+          "minutes": 60,
+          "status": "not_started"
+        },
+        {
+          "id": "d90-cs-1",
+          "track": "CS",
+          "title": "Write a short reflection: what worked, what to cut, targets for the next 30 days",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d90-comm-1",
+          "track": "COMM",
+          "title": "Record your final self-introduction and compare it with Day 1",
+          "minutes": 30,
+          "status": "not_started"
+        },
+        {
+          "id": "d90-job-9",
+          "track": "JOB",
+          "title": "Count applications, referrals, interviews; set next 30-day targets",
+          "minutes": 20,
+          "status": "not_started"
+        }
+      ],
+      "minimumDay": [
+        "1 LeetCode problem (easiest from today's list)",
+        "30 min of coding",
+        "10 min of speaking"
+      ],
+      "showedUp": false,
+      "dayTypeUsed": null,
+      "notes": ""
+    }
+  ]
+}
