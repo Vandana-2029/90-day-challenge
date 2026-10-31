@@ -1,9 +1,11 @@
 // Entry point: loads the plan, then routes between pages using the URL hash (#/today, #/plan/12 ...).
-import { load, save } from './store.js';
+import { load, save, watchOtherTabs } from './store.js';
 import { loadPlan, dayNumber, TOTAL_DAYS } from './plan.js';
 import * as today from './views/today.js';
+import * as dashboard from './views/dashboard.js';
+import { driftStrip } from './views/dashboard.js';
 
-const routes = { today };
+const routes = { today, dashboard };
 
 const app = document.getElementById('app');
 
@@ -35,7 +37,14 @@ function render() {
     app.innerHTML = `<div class="card"><h2>Coming soon</h2><p class="muted">This page is still being built.</p></div>`;
     return;
   }
-  view.render(app, { params, rerender: render });
+  view.render(app, {
+    params,
+    rerender: render,
+    afterRender: (root) => {
+      const strip = root.querySelector('#drift-strip');
+      if (strip) strip.innerHTML = driftStrip();
+    },
+  });
 }
 
 async function boot() {
@@ -56,6 +65,7 @@ async function boot() {
       <p>Open this site through a web server (GitHub Pages, or run <kbd>npx serve</kbd> in this folder), not by double-clicking index.html.</p></div>`;
     return;
   }
+  watchOtherTabs(render);
   window.addEventListener('hashchange', () => { render(); app.focus({ preventScroll: true }); window.scrollTo(0, 0); });
   render();
 }

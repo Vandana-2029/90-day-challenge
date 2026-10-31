@@ -99,6 +99,13 @@ export function resetAll() {
   try { localStorage.removeItem(KEY); } catch { /* ignore */ }
 }
 
+/** Keep tabs in sync: if another tab saves, drop the in-memory copy so it reloads. */
+export function watchOtherTabs(onChange) {
+  window.addEventListener('storage', (e) => {
+    if (e.key === KEY) { memory = null; onChange(); }
+  });
+}
+
 export function storageWorks() {
   return storageOk;
 }
