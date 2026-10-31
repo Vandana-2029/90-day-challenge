@@ -7,8 +7,10 @@ import { driftStrip } from './views/dashboard.js';
 import * as goals from './views/goals.js';
 import * as planView from './views/plan.js';
 import * as jobs from './views/jobs.js';
+import * as practice from './views/practice.js';
+import * as focus from './views/focus.js';
 
-const routes = { today, dashboard, goals, plan: planView, jobs };
+const routes = { today, dashboard, goals, plan: planView, jobs, practice, focus };
 
 const app = document.getElementById('app');
 
