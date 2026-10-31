@@ -9,8 +9,11 @@ import * as planView from './views/plan.js';
 import * as jobs from './views/jobs.js';
 import * as practice from './views/practice.js';
 import * as focus from './views/focus.js';
+import * as settings from './views/settings.js';
+import { maybeWelcome } from './replan.js';
+import { diffDays, todayISO } from './utils.js';
 
-const routes = { today, dashboard, goals, plan: planView, jobs, practice, focus };
+const routes = { today, dashboard, goals, plan: planView, jobs, practice, focus, settings };
 
 const app = document.getElementById('app');
 
@@ -26,6 +29,15 @@ function updatePill() {
   if (n < 1) pill.textContent = `Starts in ${1 - n}d`;
   else if (n > TOTAL_DAYS) pill.textContent = 'Finished';
   else pill.textContent = `Day ${n} / 90`;
+}
+
+function backupReminder() {
+  const s = load();
+  const n = dayNumber();
+  if (n < 7) return '';
+  const age = s.lastBackup ? diffDays(s.lastBackup, todayISO()) : null;
+  if (age !== null && age < 7) return '';
+  return `<div class="banner info small" style="margin-top:10px">Your progress lives only in this browser. <a href="#/settings">Download a backup</a> (takes 5 seconds).</div>`;
 }
 
 function parseHash() {
@@ -47,7 +59,7 @@ function render() {
     rerender: render,
     afterRender: (root) => {
       const strip = root.querySelector('#drift-strip');
-      if (strip) strip.innerHTML = driftStrip();
+      if (strip) strip.innerHTML = driftStrip() + backupReminder();
     },
   });
 }
@@ -73,6 +85,7 @@ async function boot() {
   watchOtherTabs(render);
   window.addEventListener('hashchange', () => { render(); app.focus({ preventScroll: true }); window.scrollTo(0, 0); });
   render();
+  maybeWelcome(render);
 }
 
 boot();

@@ -13,6 +13,9 @@ import { addDays, diffDays, todayISO, parseISO } from './utils.js';
 
 let CAP = null;
 
+/** Drift below this (about 1 hour of work) counts as on track. */
+export const BEHIND = 0.25;
+
 /** Average minutes of planned work on a normal (non catch-up, non review) day. */
 export function dailyCapacity() {
   if (CAP) return CAP;
@@ -49,7 +52,7 @@ export function computeDrift(asOf = todayISO()) {
     dayNumber: n,
     required, donePast, doneAhead, backlog,
     days,                                     // can be negative (ahead)
-    shift: days > 0.05 ? Math.ceil(days) : 0, // whole days the finish date moves
+    shift: days > BEHIND ? Math.max(1, Math.round(days)) : 0, // whole days the finish date moves
     byTrack,
     cap,
   };
@@ -75,7 +78,7 @@ export function showedUpDates() {
   for (const rec of Object.values(s.tasks)) if (DONE_STATUSES.has(rec.status)) set.add(rec.at);
   for (const [n, d] of Object.entries(s.days)) {
     const m = d.minimum || {};
-    if (m.lc && m.code && m.speak) set.add(dateOf(Number(n)));
+    if (m.lc && m.code && m.speak) set.add(d.minDoneOn || dateOf(Number(n))); // date it was done, so re-plans don't move it
   }
   return set;
 }
@@ -85,19 +88,19 @@ export function streaks(asOf = todayISO()) {
   // current: count back from today; if today isn't done yet, start from yesterday
   let cur = 0;
   let d = set.has(asOf) ? asOf : addDays(asOf, -1);
-  while (set.has(d) && d >= startDate()) { cur++; d = addDays(d, -1); }
+  const first = [startDate(), plan().meta.startDate].sort()[0]; // count from the original start, even after re-plans
+  while (set.has(d) && d >= first) { cur++; d = addDays(d, -1); }
   // longest
   let best = 0, run = 0;
   const end = asOf;
-  for (let x = startDate(); x <= end; x = addDays(x, 1)) {
+  for (let x = first; x <= end; x = addDays(x, 1)) {
     run = set.has(x) ? run + 1 : 0;
     best = Math.max(best, run);
   }
   // showed-up days inside the challenge window
-  const start = startDate();
-  const last = addDays(start, TOTAL_DAYS - 1);
+  const last = addDays(startDate(), TOTAL_DAYS - 1);
   let showed = 0, missed = 0;
-  for (let x = start; x <= asOf && x <= last; x = addDays(x, 1)) {
+  for (let x = first; x <= asOf && x <= last; x = addDays(x, 1)) {
     if (set.has(x)) showed++;
     else if (x < asOf) missed++;
   }

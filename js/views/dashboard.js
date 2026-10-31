@@ -1,5 +1,5 @@
 // DRIFT: shows how unfinished daily work pushes the big goals back, with the consequences spelled out.
-import { computeDrift, projection, streaks, driftHistory, nextCatchup, hiringVerdict, shiftedDays, dailyCapacity, HIRING_WINDOWS } from '../drift.js';
+import { BEHIND, computeDrift, projection, streaks, driftHistory, nextCatchup, hiringVerdict, shiftedDays, dailyCapacity, HIRING_WINDOWS } from '../drift.js';
 import { plan, dayNumber, allTasks, getPlanDay, TOTAL_DAYS } from '../plan.js';
 import { load, isDone } from '../store.js';
 import { esc, fmtDate, plural, TRACK_LABEL, trackChip } from '../utils.js';
@@ -7,22 +7,25 @@ import { stat } from '../components.js';
 
 const fmtDays = (d) => {
   const a = Math.abs(d);
-  return a < 0.05 ? '0 days' : `${a.toFixed(1)} day${a.toFixed(1) === '1.0' ? '' : 's'}`;
+  return a < BEHIND ? '0 days' : `${a.toFixed(1)} day${a.toFixed(1) === '1.0' ? '' : 's'}`;
 };
 
 /** Small banner reused on the Today page. */
 export function driftStrip(drift = computeDrift()) {
   if (drift.dayNumber < 2) return '';
   const end = projection(TOTAL_DAYS, drift);
-  if (drift.days > 0.05) {
+  if (drift.days > BEHIND) {
     const cls = drift.days >= 5 ? 'bad' : 'warn';
     return `<a href="#/dashboard" style="text-decoration:none;color:inherit"><div class="banner ${cls} row between">
       <div><strong>Your big goal is drifting: ${fmtDays(drift.days)} behind.</strong>
       <div class="small">Day 90 moves from ${fmtDate(end.original)} to ${fmtDate(end.projected)}. Tap to see what that costs you.</div></div>
       <span class="big-number ${cls}-ink">+${drift.shift}d</span></div></a>`;
   }
-  if (drift.days < -0.05) {
+  if (drift.days < -BEHIND) {
     return `<div class="banner good"><strong>You're ${fmtDays(drift.days)} ahead of plan.</strong> <span class="small">Keep this up and you'll finish early.</span></div>`;
+  }
+  if (end.lateBy > 0) {
+    return `<div class="banner warn"><strong>Back on track.</strong> <span class="small">Your re-plan moved Day 90 by ${end.lateBy} days, to ${fmtDate(end.projected)}. Protect it.</span></div>`;
   }
   return `<div class="banner good"><strong>On track.</strong> <span class="small">Day 90 is still ${fmtDate(end.projected)}.</span></div>`;
 }
@@ -38,7 +41,7 @@ function chart(history) {
   const ticks = [min, 0, max].filter((v, i, a) => a.indexOf(v) === i);
   const area = `M${x(0)},${y(0)} L${pts.split(' ').join(' L')} L${x(history.length - 1)},${y(0)} Z`;
   const lastV = vals[vals.length - 1];
-  const color = lastV > 0.05 ? 'var(--bad)' : 'var(--good)';
+  const color = lastV > BEHIND ? 'var(--bad)' : 'var(--good)';
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Drift in days over time" style="width:100%;height:auto">
     ${ticks.map(v => `<line class="grid-line" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${v > 0 ? '+' : ''}${v.toFixed(0)}d</text>`).join('')}
     <path d="${area}" fill="${color}" fill-opacity="0.12"/>
@@ -66,14 +69,16 @@ export function render(root) {
 
   const status = n < 2
     ? `<div class="banner info"><h2>Drift starts counting after Day 1</h2><p>Every evening, unfinished tasks from that day turn into "drift": the number of days your Day 90 moves back. Finish tasks and the drift goes down again.</p></div>`
-    : drift.days > 0.05
+    : drift.days > BEHIND
       ? `<div class="banner ${drift.days >= 5 ? 'bad' : 'warn'}">
           <div class="row between" style="flex-wrap:nowrap"><div style="flex:1">
             <h2>Your big goal has drifted ${fmtDays(drift.days)}</h2>
             <p>You have ${plural(Math.round(drift.backlog / 60), 'hour')} of unfinished work from past days. At your planned pace, your finish line moves from <strong>${fmtDate(milestones[2].original)}</strong> to <strong>${fmtDate(milestones[2].projected)}</strong>.</p>
           </div><div class="big-number ${drift.days >= 5 ? 'bad' : 'warn'}-ink">+${drift.shift}d</div></div>
         </div>`
-      : `<div class="banner good"><h2>${drift.days < -0.05 ? `You're ${fmtDays(drift.days)} ahead` : 'You are on track'}</h2><p>Day 90 lands on ${fmtDate(milestones[2].projected)}. Keep showing up.</p></div>`;
+      : milestones[2].lateBy > 0
+        ? `<div class="banner warn"><h2>Back on track, but the finish line moved</h2><p>Re-planning after breaks moved Day 90 by <strong>${plural(milestones[2].lateBy, 'day')}</strong>: from ${fmtDate(milestones[2].original)} to ${fmtDate(milestones[2].projected)}. No more drift from here.</p></div>`
+        : `<div class="banner good"><h2>${drift.days < -BEHIND ? `You're ${fmtDays(drift.days)} ahead` : 'You are on track'}</h2><p>Day 90 lands on ${fmtDate(milestones[2].projected)}. Keep showing up.</p></div>`;
 
   root.innerHTML = `
   <div class="stack">

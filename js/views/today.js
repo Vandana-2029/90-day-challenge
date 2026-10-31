@@ -1,7 +1,7 @@
 // TODAY: the tasks for today's plan day, day type, Minimum Day checklist, overdue tasks and reflection.
 import { plan, dayNumber, currentDay, getPlanDay, phaseOf, allTasks, isBufferTask, dateOf, TOTAL_DAYS } from '../plan.js';
 import { getDay, updateDay, setTaskStatus, getTask, isDone, save } from '../store.js';
-import { esc, fmtDate, pct, plural, debounce, TRACK_ORDER, toast } from '../utils.js';
+import { esc, fmtDate, pct, plural, debounce, TRACK_ORDER, toast, todayISO } from '../utils.js';
 import { taskRow, bindTaskRows, bar } from '../components.js';
 
 const DAY_TYPES = [
@@ -133,7 +133,8 @@ export function render(root, ctx) {
   }));
   root.querySelectorAll('[data-min]').forEach(cb => cb.addEventListener('change', () => {
     const minimum = { ...(getDay(dayN).minimum || {}), [cb.dataset.min]: cb.checked };
-    updateDay(dayN, { minimum });
+    const complete = MIN_ITEMS.every(m => minimum[m.id]);
+    updateDay(dayN, { minimum, minDoneOn: complete ? (getDay(dayN).minDoneOn || todayISO()) : null });
     if (MIN_ITEMS.every(m => minimum[m.id])) toast('Minimum Day done. Your streak is safe.');
     rerender();
   }));
