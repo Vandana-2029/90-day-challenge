@@ -192,7 +192,7 @@ th { font-size: .78rem; color: var(--text-2); font-weight: 600; }
 tr.due td { background: var(--warn-bg); }
 
 /* ===== Heatmap ===== */
-.heat { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; }
+.heat { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 6px; max-width: 620px; }
 @media (max-width: 520px) { .heat { grid-template-columns: repeat(7, minmax(0, 1fr)); } }
 .heat button {
   aspect-ratio: 1; border: 0; border-radius: 8px; background: var(--heat-0); color: var(--text); font: inherit;
