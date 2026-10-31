@@ -12,6 +12,7 @@ function defaults() {
     tasks: {},              // taskId -> { status, at: 'YYYY-MM-DD' }
     days: {},               // planDay -> { dayType, minimum: {lc, code, speak}, notes, wins: [], energy }
     milestones: {},         // milestone item id -> true
+    customGoals: [],        // her own big goals [{ id, text, done }]
     apps: [],               // job applications
     mocks: [],              // aptitude / coding / interview mock results
     lcExtra: 0,             // contests, re-solves, daily problems not in the plan

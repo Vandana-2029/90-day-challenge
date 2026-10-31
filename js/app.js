@@ -4,8 +4,9 @@ import { loadPlan, dayNumber, TOTAL_DAYS } from './plan.js';
 import * as today from './views/today.js';
 import * as dashboard from './views/dashboard.js';
 import { driftStrip } from './views/dashboard.js';
+import * as goals from './views/goals.js';
 
-const routes = { today, dashboard };
+const routes = { today, dashboard, goals };
 
 const app = document.getElementById('app');
 
