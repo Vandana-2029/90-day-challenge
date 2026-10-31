@@ -6,8 +6,9 @@ import * as dashboard from './views/dashboard.js';
 import { driftStrip } from './views/dashboard.js';
 import * as goals from './views/goals.js';
 import * as planView from './views/plan.js';
+import * as jobs from './views/jobs.js';
 
-const routes = { today, dashboard, goals, plan: planView };
+const routes = { today, dashboard, goals, plan: planView, jobs };
 
 const app = document.getElementById('app');
 
