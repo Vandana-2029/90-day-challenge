@@ -1,6 +1,6 @@
 # 90-Day Challenge Tracker
 
-My personal tracker for a 90-day job-ready challenge (Day 1 = 1 Nov 2026, Day 90 = 29 Jan 2027): DSA, MERN, aptitude, CS core, communication and job hunting.
+My personal tracker for a 90-day job-ready challenge (Day 1 = 25 Nov 2026, Day 90 = 22 Feb 2027; restarted from 1 Nov 2026): DSA, MERN, aptitude, CS core, communication and job hunting.
 
 **Live site:** https://vandana-90-day-challenge.onrender.com (Render) · mirror: https://vandana-2029.github.io/90-day-challenge/ (GitHub Pages)
 

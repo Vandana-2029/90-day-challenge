@@ -1,5 +1,5 @@
 // Helpers for reading the static plan (data/plan.json) together with the start date.
-import { load } from './store.js';
+import { load, save, restartFrom } from './store.js';
 import { addDays, diffDays, todayISO } from './utils.js';
 
 let PLAN = null;
@@ -9,7 +9,11 @@ export async function loadPlan() {
   if (!res.ok) throw new Error('plan.json not found');
   PLAN = await res.json();
   const s = load();
+  // Saved progress belongs to an older start date: begin again from Day 1.
+  if (s.startDate && s.planStart !== PLAN.meta.startDate) restartFrom(PLAN.meta.startDate);
   if (!s.startDate) s.startDate = PLAN.meta.startDate;
+  s.planStart = PLAN.meta.startDate;
+  save();
   return PLAN;
 }
 

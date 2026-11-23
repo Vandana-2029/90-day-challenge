@@ -9,6 +9,7 @@ function defaults() {
   return {
     version: 1,
     startDate: null,        // set from plan.meta.startDate on first load
+    planStart: null,        // plan.meta.startDate this progress belongs to (a new one starts fresh)
     tasks: {},              // taskId -> { status, at: 'YYYY-MM-DD' }
     days: {},               // planDay -> { dayType, minimum: {lc, code, speak}, notes, wins: [], energy }
     milestones: {},         // milestone item id -> true
@@ -92,6 +93,23 @@ export function importJSON(text) {
   const data = parsed.data || parsed;
   if (typeof data !== 'object' || !data.tasks) throw new Error('This file is not a tracker backup.');
   memory = { ...defaults(), ...data };
+  save();
+}
+
+/**
+ * Start the 90 days again from a new Day 1. Day-by-day progress (tasks, day notes,
+ * milestone ticks, re-plans) is cleared; the job log, mocks, portals, extra LeetCode,
+ * focus minutes, own goals and "why" are kept. The old data is copied to a backup key first.
+ */
+export function restartFrom(newStart) {
+  const old = load();
+  try { localStorage.setItem(`${KEY}-before-restart-${newStart}`, JSON.stringify(old)); } catch { /* ignore */ }
+  const keep = ['apps', 'mocks', 'portals', 'lcExtra', 'focus', 'customGoals', 'why', 'theme'];
+  const fresh = defaults();
+  for (const k of keep) fresh[k] = old[k] ?? fresh[k];
+  fresh.startDate = newStart;
+  fresh.planStart = newStart;
+  memory = fresh;
   save();
 }
 
